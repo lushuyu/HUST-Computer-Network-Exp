@@ -1,0 +1,969 @@
+******模拟网络环境******：模拟网络环境初始化...
+******模拟网络环境******：模拟网络环境启动...
+Sending content : seqnum = 0, acknum = -1, checksum = 29556, AAAAAAAAAAAAAAAAAAAA
+Sending timer 
+expectSequenceNumberSend is 1
+Receiver Correct.: seqnum = 0, acknum = -1, checksum = 29556, AAAAAAAAAAAAAAAAAAAA
+******模拟网络环境******：向上递交给应用层数据：AAAAAAAAAAAAAAAAAAAA
+Receiver Sending Correct Content.: seqnum = -1, acknum = 0, checksum = 12851, ....................
+Correct.: seqnum = -1, acknum = 0, checksum = 12851, ....................
+sliding window [ * * * * ]
+All sent. Close timer.
+Sending content : seqnum = 1, acknum = -1, checksum = 26985, BBBBBBBBBBBBBBBBBBBB
+Sending timer 
+expectSequenceNumberSend is 2
+Sending content : seqnum = 2, acknum = -1, checksum = 24414, CCCCCCCCCCCCCCCCCCCC
+expectSequenceNumberSend is 3
+Sending content : seqnum = 3, acknum = -1, checksum = 21843, DDDDDDDDDDDDDDDDDDDD
+expectSequenceNumberSend is 4
+Sending content : seqnum = 4, acknum = -1, checksum = 19272, EEEEEEEEEEEEEEEEEEEE
+expectSequenceNumberSend is 5
+Receiver Correct.: seqnum = 1, acknum = -1, checksum = 26985, BBBBBBBBBBBBBBBBBBBB
+******模拟网络环境******：向上递交给应用层数据：BBBBBBBBBBBBBBBBBBBB
+Receiver Sending Correct Content.: seqnum = -1, acknum = 1, checksum = 12850, ....................
+Receiver Correct.: seqnum = 2, acknum = -1, checksum = 24414, CCCCCCCCCCCCCCCCCCCC
+******模拟网络环境******：向上递交给应用层数据：CCCCCCCCCCCCCCCCCCCC
+Receiver Sending Correct Content.: seqnum = -1, acknum = 2, checksum = 12849, ....................
+Correct.: seqnum = -1, acknum = 1, checksum = 12850, ....................
+sliding window [ 2 3 4 * ]
+Receiver Correct.: seqnum = 3, acknum = -1, checksum = 21843, DDDDDDDDDDDDDDDDDDDD
+******模拟网络环境******：向上递交给应用层数据：DDDDDDDDDDDDDDDDDDDD
+Receiver Sending Correct Content.: seqnum = -1, acknum = 3, checksum = 12848, ....................
+Correct.: seqnum = -1, acknum = 2, checksum = 12849, ....................
+sliding window [ 3 4 * * ]
+Correct.: seqnum = -1, acknum = 3, checksum = 12848, ....................
+sliding window [ 4 * * * ]
+Receiver Correct.: seqnum = 4, acknum = -1, checksum = 19272, EEEEEEEEEEEEEEEEEEEE
+******模拟网络环境******：向上递交给应用层数据：EEEEEEEEEEEEEEEEEEEE
+Receiver Sending Correct Content.: seqnum = -1, acknum = 4, checksum = 12847, ....................
+ACK Broken
+Sending timeout, N steps back.
+Resending4.
+Sender's timer has expired. Resending the message: seqnum = 4, acknum = -1, checksum = 19272, EEEEEEEEEEEEEEEEEEEE
+Receiver did not receive the sender's message correctly, data verification error: seqnum = 4, acknum = -1, checksum = 19272, FEEEEEEEEEEEEEEEEEEE
+Recending : seqnum = -1, acknum = 4, checksum = 12847, ....................
+ACK Broken
+Sending timeout, N steps back.
+Resending4.
+Sender's timer has expired. Resending the message: seqnum = 4, acknum = -1, checksum = 19272, EEEEEEEEEEEEEEEEEEEE
+Receiver did not receive the sender's message correctly, message number is incorrect: seqnum = 4, acknum = -1, checksum = 19272, EEEEEEEEEEEEEEEEEEEE
+Expecting 5
+Recending : seqnum = -1, acknum = 4, checksum = 12847, ....................
+Correct.: seqnum = -1, acknum = 4, checksum = 12847, ....................
+sliding window [ * * * * ]
+All sent. Close timer.
+Sending content : seqnum = 5, acknum = -1, checksum = 16701, FFFFFFFFFFFFFFFFFFFF
+Sending timer 
+expectSequenceNumberSend is 6
+Sending content : seqnum = 6, acknum = -1, checksum = 14130, GGGGGGGGGGGGGGGGGGGG
+expectSequenceNumberSend is 7
+Sending content : seqnum = 7, acknum = -1, checksum = 11559, HHHHHHHHHHHHHHHHHHHH
+expectSequenceNumberSend is 8
+Sending content : seqnum = 8, acknum = -1, checksum = 8988, IIIIIIIIIIIIIIIIIIII
+expectSequenceNumberSend is 9
+Receiver Correct.: seqnum = 5, acknum = -1, checksum = 16701, FFFFFFFFFFFFFFFFFFFF
+******模拟网络环境******：向上递交给应用层数据：FFFFFFFFFFFFFFFFFFFF
+Receiver Sending Correct Content.: seqnum = -1, acknum = 5, checksum = 12846, ....................
+Receiver Correct.: seqnum = 6, acknum = -1, checksum = 14130, GGGGGGGGGGGGGGGGGGGG
+******模拟网络环境******：向上递交给应用层数据：GGGGGGGGGGGGGGGGGGGG
+Receiver Sending Correct Content.: seqnum = -1, acknum = 6, checksum = 12845, ....................
+Correct.: seqnum = -1, acknum = 5, checksum = 12846, ....................
+sliding window [ 6 7 8 * ]
+Receiver did not receive the sender's message correctly, data verification error: seqnum = 7, acknum = -1, checksum = 11559, IHHHHHHHHHHHHHHHHHHH
+Recending : seqnum = -1, acknum = 6, checksum = 12845, ....................
+Correct.: seqnum = -1, acknum = 6, checksum = 12845, ....................
+sliding window [ 7 8 * * ]
+Receiver did not receive the sender's message correctly, message number is incorrect: seqnum = 8, acknum = -1, checksum = 8988, IIIIIIIIIIIIIIIIIIII
+Expecting 7
+Recending : seqnum = -1, acknum = 6, checksum = 12845, ....................
+Incorrect, waiting.
+Sending timeout, N steps back.
+Resending7.
+Sender's timer has expired. Resending the message: seqnum = 7, acknum = -1, checksum = 11559, HHHHHHHHHHHHHHHHHHHH
+Resending8.
+Sender's timer has expired. Resending the message: seqnum = 8, acknum = -1, checksum = 8988, IIIIIIIIIIIIIIIIIIII
+Receiver Correct.: seqnum = 7, acknum = -1, checksum = 11559, HHHHHHHHHHHHHHHHHHHH
+******模拟网络环境******：向上递交给应用层数据：HHHHHHHHHHHHHHHHHHHH
+Receiver Sending Correct Content.: seqnum = -1, acknum = 7, checksum = 12844, ....................
+Receiver Correct.: seqnum = 8, acknum = -1, checksum = 8988, IIIIIIIIIIIIIIIIIIII
+******模拟网络环境******：向上递交给应用层数据：IIIIIIIIIIIIIIIIIIII
+Receiver Sending Correct Content.: seqnum = -1, acknum = 8, checksum = 12843, ....................
+Correct.: seqnum = -1, acknum = 7, checksum = 12844, ....................
+sliding window [ 8 * * * ]
+Correct.: seqnum = -1, acknum = 8, checksum = 12843, ....................
+sliding window [ * * * * ]
+All sent. Close timer.
+Sending content : seqnum = 9, acknum = -1, checksum = 6417, JJJJJJJJJJJJJJJJJJJJ
+Sending timer 
+expectSequenceNumberSend is 10
+Sending content : seqnum = 10, acknum = -1, checksum = 3846, KKKKKKKKKKKKKKKKKKKK
+expectSequenceNumberSend is 11
+Sending content : seqnum = 11, acknum = -1, checksum = 1275, LLLLLLLLLLLLLLLLLLLL
+expectSequenceNumberSend is 12
+Sending content : seqnum = 12, acknum = -1, checksum = 64239, MMMMMMMMMMMMMMMMMMMM
+expectSequenceNumberSend is 13
+Receiver Correct.: seqnum = 9, acknum = -1, checksum = 6417, JJJJJJJJJJJJJJJJJJJJ
+******模拟网络环境******：向上递交给应用层数据：JJJJJJJJJJJJJJJJJJJJ
+Receiver Sending Correct Content.: seqnum = -1, acknum = 9, checksum = 12842, ....................
+Correct.: seqnum = -1, acknum = 9, checksum = 12842, ....................
+sliding window [ 10 11 12 * ]
+Receiver Correct.: seqnum = 10, acknum = -1, checksum = 3846, KKKKKKKKKKKKKKKKKKKK
+******模拟网络环境******：向上递交给应用层数据：KKKKKKKKKKKKKKKKKKKK
+Receiver Sending Correct Content.: seqnum = -1, acknum = 10, checksum = 12841, ....................
+Correct.: seqnum = -1, acknum = 10, checksum = 12841, ....................
+sliding window [ 11 12 * * ]
+Receiver Correct.: seqnum = 11, acknum = -1, checksum = 1275, LLLLLLLLLLLLLLLLLLLL
+******模拟网络环境******：向上递交给应用层数据：LLLLLLLLLLLLLLLLLLLL
+Receiver Sending Correct Content.: seqnum = -1, acknum = 11, checksum = 12840, ....................
+Receiver Correct.: seqnum = 12, acknum = -1, checksum = 64239, MMMMMMMMMMMMMMMMMMMM
+******模拟网络环境******：向上递交给应用层数据：MMMMMMMMMMMMMMMMMMMM
+Receiver Sending Correct Content.: seqnum = -1, acknum = 12, checksum = 12839, ....................
+Correct.: seqnum = -1, acknum = 11, checksum = 12840, ....................
+sliding window [ 12 * * * ]
+Correct.: seqnum = -1, acknum = 12, checksum = 12839, ....................
+sliding window [ * * * * ]
+All sent. Close timer.
+Sending content : seqnum = 13, acknum = -1, checksum = 61668, NNNNNNNNNNNNNNNNNNNN
+Sending timer 
+expectSequenceNumberSend is 14
+Sending content : seqnum = 14, acknum = -1, checksum = 59097, OOOOOOOOOOOOOOOOOOOO
+expectSequenceNumberSend is 15
+Sending content : seqnum = 15, acknum = -1, checksum = 56526, PPPPPPPPPPPPPPPPPPPP
+expectSequenceNumberSend is 16
+Sending content : seqnum = 16, acknum = -1, checksum = 53955, QQQQQQQQQQQQQQQQQQQQ
+expectSequenceNumberSend is 17
+Receiver Correct.: seqnum = 13, acknum = -1, checksum = 61668, NNNNNNNNNNNNNNNNNNNN
+******模拟网络环境******：向上递交给应用层数据：NNNNNNNNNNNNNNNNNNNN
+Receiver Sending Correct Content.: seqnum = -1, acknum = 13, checksum = 12838, ....................
+Receiver Correct.: seqnum = 14, acknum = -1, checksum = 59097, OOOOOOOOOOOOOOOOOOOO
+******模拟网络环境******：向上递交给应用层数据：OOOOOOOOOOOOOOOOOOOO
+Receiver Sending Correct Content.: seqnum = -1, acknum = 14, checksum = 12837, ....................
+Correct.: seqnum = -1, acknum = 13, checksum = 12838, ....................
+sliding window [ 14 15 16 * ]
+Receiver Correct.: seqnum = 15, acknum = -1, checksum = 56526, PPPPPPPPPPPPPPPPPPPP
+******模拟网络环境******：向上递交给应用层数据：PPPPPPPPPPPPPPPPPPPP
+Receiver Sending Correct Content.: seqnum = -1, acknum = 15, checksum = 12836, ....................
+Correct.: seqnum = -1, acknum = 14, checksum = 12837, ....................
+sliding window [ 15 16 * * ]
+Correct.: seqnum = -1, acknum = 15, checksum = 12836, ....................
+sliding window [ 16 * * * ]
+Receiver Correct.: seqnum = 16, acknum = -1, checksum = 53955, QQQQQQQQQQQQQQQQQQQQ
+******模拟网络环境******：向上递交给应用层数据：QQQQQQQQQQQQQQQQQQQQ
+Receiver Sending Correct Content.: seqnum = -1, acknum = 16, checksum = 12835, ....................
+Correct.: seqnum = -1, acknum = 16, checksum = 12835, ....................
+sliding window [ * * * * ]
+All sent. Close timer.
+Sending content : seqnum = 17, acknum = -1, checksum = 51384, RRRRRRRRRRRRRRRRRRRR
+Sending timer 
+expectSequenceNumberSend is 18
+Sending content : seqnum = 18, acknum = -1, checksum = 48813, SSSSSSSSSSSSSSSSSSSS
+expectSequenceNumberSend is 19
+Sending content : seqnum = 19, acknum = -1, checksum = 46242, TTTTTTTTTTTTTTTTTTTT
+expectSequenceNumberSend is 20
+Sending content : seqnum = 20, acknum = -1, checksum = 43671, UUUUUUUUUUUUUUUUUUUU
+expectSequenceNumberSend is 21
+Receiver Correct.: seqnum = 17, acknum = -1, checksum = 51384, RRRRRRRRRRRRRRRRRRRR
+******模拟网络环境******：向上递交给应用层数据：RRRRRRRRRRRRRRRRRRRR
+Receiver Sending Correct Content.: seqnum = -1, acknum = 17, checksum = 12834, ....................
+Correct.: seqnum = -1, acknum = 17, checksum = 12834, ....................
+sliding window [ 18 19 20 * ]
+Receiver Correct.: seqnum = 18, acknum = -1, checksum = 48813, SSSSSSSSSSSSSSSSSSSS
+******模拟网络环境******：向上递交给应用层数据：SSSSSSSSSSSSSSSSSSSS
+Receiver Sending Correct Content.: seqnum = -1, acknum = 18, checksum = 12833, ....................
+Receiver Correct.: seqnum = 19, acknum = -1, checksum = 46242, TTTTTTTTTTTTTTTTTTTT
+******模拟网络环境******：向上递交给应用层数据：TTTTTTTTTTTTTTTTTTTT
+Receiver Sending Correct Content.: seqnum = -1, acknum = 19, checksum = 12832, ....................
+ACK Broken
+Receiver Correct.: seqnum = 20, acknum = -1, checksum = 43671, UUUUUUUUUUUUUUUUUUUU
+******模拟网络环境******：向上递交给应用层数据：UUUUUUUUUUUUUUUUUUUU
+Receiver Sending Correct Content.: seqnum = -1, acknum = 20, checksum = 12831, ....................
+Correct.: seqnum = -1, acknum = 19, checksum = 12832, ....................
+sliding window [ 20 * * * ]
+Correct.: seqnum = -1, acknum = 20, checksum = 12831, ....................
+sliding window [ * * * * ]
+All sent. Close timer.
+Sending content : seqnum = 21, acknum = -1, checksum = 41100, VVVVVVVVVVVVVVVVVVVV
+Sending timer 
+expectSequenceNumberSend is 22
+Sending content : seqnum = 22, acknum = -1, checksum = 38529, WWWWWWWWWWWWWWWWWWWW
+expectSequenceNumberSend is 23
+Sending content : seqnum = 23, acknum = -1, checksum = 35958, XXXXXXXXXXXXXXXXXXXX
+expectSequenceNumberSend is 24
+Sending content : seqnum = 24, acknum = -1, checksum = 33387, YYYYYYYYYYYYYYYYYYYY
+expectSequenceNumberSend is 25
+Receiver Correct.: seqnum = 21, acknum = -1, checksum = 41100, VVVVVVVVVVVVVVVVVVVV
+******模拟网络环境******：向上递交给应用层数据：VVVVVVVVVVVVVVVVVVVV
+Receiver Sending Correct Content.: seqnum = -1, acknum = 21, checksum = 12830, ....................
+Receiver Correct.: seqnum = 22, acknum = -1, checksum = 38529, WWWWWWWWWWWWWWWWWWWW
+******模拟网络环境******：向上递交给应用层数据：WWWWWWWWWWWWWWWWWWWW
+Receiver Sending Correct Content.: seqnum = -1, acknum = 22, checksum = 12829, ....................
+Correct.: seqnum = -1, acknum = 22, checksum = 12829, ....................
+sliding window [ 23 24 * * ]
+Receiver did not receive the sender's message correctly, data verification error: seqnum = -999999, acknum = -1, checksum = 35958, XXXXXXXXXXXXXXXXXXXX
+Recending : seqnum = -1, acknum = 22, checksum = 12829, ....................
+Incorrect, waiting.
+Receiver did not receive the sender's message correctly, message number is incorrect: seqnum = 24, acknum = -1, checksum = 33387, YYYYYYYYYYYYYYYYYYYY
+Expecting 23
+Recending : seqnum = -1, acknum = 22, checksum = 12829, ....................
+Incorrect, waiting.
+Sending timeout, N steps back.
+Resending23.
+Sender's timer has expired. Resending the message: seqnum = 23, acknum = -1, checksum = 35958, XXXXXXXXXXXXXXXXXXXX
+Resending24.
+Sender's timer has expired. Resending the message: seqnum = 24, acknum = -1, checksum = 33387, YYYYYYYYYYYYYYYYYYYY
+Receiver Correct.: seqnum = 23, acknum = -1, checksum = 35958, XXXXXXXXXXXXXXXXXXXX
+******模拟网络环境******：向上递交给应用层数据：XXXXXXXXXXXXXXXXXXXX
+Receiver Sending Correct Content.: seqnum = -1, acknum = 23, checksum = 12828, ....................
+Receiver Correct.: seqnum = 24, acknum = -1, checksum = 33387, YYYYYYYYYYYYYYYYYYYY
+******模拟网络环境******：向上递交给应用层数据：YYYYYYYYYYYYYYYYYYYY
+Receiver Sending Correct Content.: seqnum = -1, acknum = 24, checksum = 12827, ....................
+Correct.: seqnum = -1, acknum = 23, checksum = 12828, ....................
+sliding window [ 24 * * * ]
+ACK Broken
+Sending timeout, N steps back.
+Resending24.
+Sender's timer has expired. Resending the message: seqnum = 24, acknum = -1, checksum = 33387, YYYYYYYYYYYYYYYYYYYY
+Receiver did not receive the sender's message correctly, message number is incorrect: seqnum = 24, acknum = -1, checksum = 33387, YYYYYYYYYYYYYYYYYYYY
+Expecting 25
+Recending : seqnum = -1, acknum = 24, checksum = 12827, ....................
+ACK Broken
+Sending timeout, N steps back.
+Resending24.
+Sender's timer has expired. Resending the message: seqnum = 24, acknum = -1, checksum = 33387, YYYYYYYYYYYYYYYYYYYY
+Receiver did not receive the sender's message correctly, message number is incorrect: seqnum = 24, acknum = -1, checksum = 33387, YYYYYYYYYYYYYYYYYYYY
+Expecting 25
+Recending : seqnum = -1, acknum = 24, checksum = 12827, ....................
+ACK Broken
+Sending timeout, N steps back.
+Resending24.
+Sender's timer has expired. Resending the message: seqnum = 24, acknum = -1, checksum = 33387, YYYYYYYYYYYYYYYYYYYY
+Receiver did not receive the sender's message correctly, message number is incorrect: seqnum = 24, acknum = -1, checksum = 33387, YYYYYYYYYYYYYYYYYYYY
+Expecting 25
+Recending : seqnum = -1, acknum = 24, checksum = 12827, ....................
+Correct.: seqnum = -1, acknum = 24, checksum = 12827, ....................
+sliding window [ * * * * ]
+All sent. Close timer.
+Sending content : seqnum = 25, acknum = -1, checksum = 30816, ZZZZZZZZZZZZZZZZZZZZ
+Sending timer 
+expectSequenceNumberSend is 26
+Sending content : seqnum = 26, acknum = -1, checksum = 29530, AAAAAAAAAAAAAAAAAAAA
+expectSequenceNumberSend is 27
+Sending content : seqnum = 27, acknum = -1, checksum = 26959, BBBBBBBBBBBBBBBBBBBB
+expectSequenceNumberSend is 28
+Sending content : seqnum = 28, acknum = -1, checksum = 24388, CCCCCCCCCCCCCCCCCCCC
+expectSequenceNumberSend is 29
+Receiver Correct.: seqnum = 25, acknum = -1, checksum = 30816, ZZZZZZZZZZZZZZZZZZZZ
+******模拟网络环境******：向上递交给应用层数据：ZZZZZZZZZZZZZZZZZZZZ
+Receiver Sending Correct Content.: seqnum = -1, acknum = 25, checksum = 12826, ....................
+Receiver Correct.: seqnum = 26, acknum = -1, checksum = 29530, AAAAAAAAAAAAAAAAAAAA
+******模拟网络环境******：向上递交给应用层数据：AAAAAAAAAAAAAAAAAAAA
+Receiver Sending Correct Content.: seqnum = -1, acknum = 26, checksum = 12825, ....................
+Receiver did not receive the sender's message correctly, message number is incorrect: seqnum = 28, acknum = -1, checksum = 24388, CCCCCCCCCCCCCCCCCCCC
+Expecting 27
+Recending : seqnum = -1, acknum = 26, checksum = 12825, ....................
+Correct.: seqnum = -1, acknum = 25, checksum = 12826, ....................
+sliding window [ 26 27 28 * ]
+Correct.: seqnum = -1, acknum = 26, checksum = 12825, ....................
+sliding window [ 27 28 * * ]
+Sending timeout, N steps back.
+Resending27.
+Sender's timer has expired. Resending the message: seqnum = 27, acknum = -1, checksum = 26959, BBBBBBBBBBBBBBBBBBBB
+Resending28.
+Sender's timer has expired. Resending the message: seqnum = 28, acknum = -1, checksum = 24388, CCCCCCCCCCCCCCCCCCCC
+Receiver Correct.: seqnum = 27, acknum = -1, checksum = 26959, BBBBBBBBBBBBBBBBBBBB
+******模拟网络环境******：向上递交给应用层数据：BBBBBBBBBBBBBBBBBBBB
+Receiver Sending Correct Content.: seqnum = -1, acknum = 27, checksum = 12824, ....................
+Correct.: seqnum = -1, acknum = 27, checksum = 12824, ....................
+sliding window [ 28 * * * ]
+Receiver Correct.: seqnum = 28, acknum = -1, checksum = 24388, CCCCCCCCCCCCCCCCCCCC
+******模拟网络环境******：向上递交给应用层数据：CCCCCCCCCCCCCCCCCCCC
+Receiver Sending Correct Content.: seqnum = -1, acknum = 28, checksum = 12823, ....................
+Correct.: seqnum = -1, acknum = 28, checksum = 12823, ....................
+sliding window [ * * * * ]
+All sent. Close timer.
+Sending content : seqnum = 29, acknum = -1, checksum = 21817, DDDDDDDDDDDDDDDDDDDD
+Sending timer 
+expectSequenceNumberSend is 30
+Sending content : seqnum = 30, acknum = -1, checksum = 19246, EEEEEEEEEEEEEEEEEEEE
+expectSequenceNumberSend is 31
+Sending content : seqnum = 31, acknum = -1, checksum = 16675, FFFFFFFFFFFFFFFFFFFF
+expectSequenceNumberSend is 32
+Sending content : seqnum = 32, acknum = -1, checksum = 14104, GGGGGGGGGGGGGGGGGGGG
+expectSequenceNumberSend is 33
+Receiver Correct.: seqnum = 29, acknum = -1, checksum = 21817, DDDDDDDDDDDDDDDDDDDD
+******模拟网络环境******：向上递交给应用层数据：DDDDDDDDDDDDDDDDDDDD
+Receiver Sending Correct Content.: seqnum = -1, acknum = 29, checksum = 12822, ....................
+Correct.: seqnum = -1, acknum = 29, checksum = 12822, ....................
+sliding window [ 30 31 32 * ]
+Receiver Correct.: seqnum = 30, acknum = -1, checksum = 19246, EEEEEEEEEEEEEEEEEEEE
+******模拟网络环境******：向上递交给应用层数据：EEEEEEEEEEEEEEEEEEEE
+Receiver Sending Correct Content.: seqnum = -1, acknum = 30, checksum = 12821, ....................
+Receiver Correct.: seqnum = 31, acknum = -1, checksum = 16675, FFFFFFFFFFFFFFFFFFFF
+******模拟网络环境******：向上递交给应用层数据：FFFFFFFFFFFFFFFFFFFF
+Receiver Sending Correct Content.: seqnum = -1, acknum = 31, checksum = 12820, ....................
+Receiver Correct.: seqnum = 32, acknum = -1, checksum = 14104, GGGGGGGGGGGGGGGGGGGG
+******模拟网络环境******：向上递交给应用层数据：GGGGGGGGGGGGGGGGGGGG
+Receiver Sending Correct Content.: seqnum = -1, acknum = 32, checksum = 12819, ....................
+Correct.: seqnum = -1, acknum = 32, checksum = 12819, ....................
+sliding window [ * * * * ]
+All sent. Close timer.
+Sending content : seqnum = 33, acknum = -1, checksum = 11533, HHHHHHHHHHHHHHHHHHHH
+Sending timer 
+expectSequenceNumberSend is 34
+Sending content : seqnum = 34, acknum = -1, checksum = 8962, IIIIIIIIIIIIIIIIIIII
+expectSequenceNumberSend is 35
+Sending content : seqnum = 35, acknum = -1, checksum = 6391, JJJJJJJJJJJJJJJJJJJJ
+expectSequenceNumberSend is 36
+Sending content : seqnum = 36, acknum = -1, checksum = 3820, KKKKKKKKKKKKKKKKKKKK
+expectSequenceNumberSend is 37
+Receiver Correct.: seqnum = 33, acknum = -1, checksum = 11533, HHHHHHHHHHHHHHHHHHHH
+******模拟网络环境******：向上递交给应用层数据：HHHHHHHHHHHHHHHHHHHH
+Receiver Sending Correct Content.: seqnum = -1, acknum = 33, checksum = 12818, ....................
+Receiver Correct.: seqnum = 34, acknum = -1, checksum = 8962, IIIIIIIIIIIIIIIIIIII
+******模拟网络环境******：向上递交给应用层数据：IIIIIIIIIIIIIIIIIIII
+Receiver Sending Correct Content.: seqnum = -1, acknum = 34, checksum = 12817, ....................
+Correct.: seqnum = -1, acknum = 34, checksum = 12817, ....................
+sliding window [ 35 36 * * ]
+Receiver Correct.: seqnum = 35, acknum = -1, checksum = 6391, JJJJJJJJJJJJJJJJJJJJ
+******模拟网络环境******：向上递交给应用层数据：JJJJJJJJJJJJJJJJJJJJ
+Receiver Sending Correct Content.: seqnum = -1, acknum = 35, checksum = 12816, ....................
+Receiver Correct.: seqnum = 36, acknum = -1, checksum = 3820, KKKKKKKKKKKKKKKKKKKK
+******模拟网络环境******：向上递交给应用层数据：KKKKKKKKKKKKKKKKKKKK
+Receiver Sending Correct Content.: seqnum = -1, acknum = 36, checksum = 12815, ....................
+Correct.: seqnum = -1, acknum = 35, checksum = 12816, ....................
+sliding window [ 36 * * * ]
+Correct.: seqnum = -1, acknum = 36, checksum = 12815, ....................
+sliding window [ * * * * ]
+All sent. Close timer.
+Sending content : seqnum = 37, acknum = -1, checksum = 1249, LLLLLLLLLLLLLLLLLLLL
+Sending timer 
+expectSequenceNumberSend is 38
+Sending content : seqnum = 38, acknum = -1, checksum = 64213, MMMMMMMMMMMMMMMMMMMM
+expectSequenceNumberSend is 39
+Sending content : seqnum = 39, acknum = -1, checksum = 61642, NNNNNNNNNNNNNNNNNNNN
+expectSequenceNumberSend is 40
+Sending content : seqnum = 40, acknum = -1, checksum = 59071, OOOOOOOOOOOOOOOOOOOO
+expectSequenceNumberSend is 41
+Receiver Correct.: seqnum = 37, acknum = -1, checksum = 1249, LLLLLLLLLLLLLLLLLLLL
+******模拟网络环境******：向上递交给应用层数据：LLLLLLLLLLLLLLLLLLLL
+Receiver Sending Correct Content.: seqnum = -1, acknum = 37, checksum = 12814, ....................
+Correct.: seqnum = -1, acknum = 37, checksum = 12814, ....................
+sliding window [ 38 39 40 * ]
+Receiver Correct.: seqnum = 38, acknum = -1, checksum = 64213, MMMMMMMMMMMMMMMMMMMM
+******模拟网络环境******：向上递交给应用层数据：MMMMMMMMMMMMMMMMMMMM
+Receiver Sending Correct Content.: seqnum = -1, acknum = 38, checksum = 12813, ....................
+Receiver Correct.: seqnum = 39, acknum = -1, checksum = 61642, NNNNNNNNNNNNNNNNNNNN
+******模拟网络环境******：向上递交给应用层数据：NNNNNNNNNNNNNNNNNNNN
+Receiver Sending Correct Content.: seqnum = -1, acknum = 39, checksum = 12812, ....................
+Sending timeout, N steps back.
+Resending38.
+Sender's timer has expired. Resending the message: seqnum = 38, acknum = -1, checksum = 64213, MMMMMMMMMMMMMMMMMMMM
+Resending39.
+Sender's timer has expired. Resending the message: seqnum = 39, acknum = -1, checksum = 61642, NNNNNNNNNNNNNNNNNNNN
+Resending40.
+Sender's timer has expired. Resending the message: seqnum = 40, acknum = -1, checksum = 59071, OOOOOOOOOOOOOOOOOOOO
+Receiver did not receive the sender's message correctly, message number is incorrect: seqnum = 38, acknum = -1, checksum = 64213, MMMMMMMMMMMMMMMMMMMM
+Expecting 40
+Recending : seqnum = -1, acknum = 39, checksum = 12812, ....................
+Correct.: seqnum = -1, acknum = 39, checksum = 12812, ....................
+sliding window [ 40 * * * ]
+Receiver did not receive the sender's message correctly, message number is incorrect: seqnum = 39, acknum = -1, checksum = 61642, NNNNNNNNNNNNNNNNNNNN
+Expecting 40
+Recending : seqnum = -1, acknum = 39, checksum = 12812, ....................
+Receiver Correct.: seqnum = 40, acknum = -1, checksum = 59071, OOOOOOOOOOOOOOOOOOOO
+******模拟网络环境******：向上递交给应用层数据：OOOOOOOOOOOOOOOOOOOO
+Receiver Sending Correct Content.: seqnum = -1, acknum = 40, checksum = 12811, ....................
+Incorrect, waiting.
+Correct.: seqnum = -1, acknum = 40, checksum = 12811, ....................
+sliding window [ * * * * ]
+All sent. Close timer.
+Sending content : seqnum = 41, acknum = -1, checksum = 56500, PPPPPPPPPPPPPPPPPPPP
+Sending timer 
+expectSequenceNumberSend is 42
+Sending content : seqnum = 42, acknum = -1, checksum = 53929, QQQQQQQQQQQQQQQQQQQQ
+expectSequenceNumberSend is 43
+Sending content : seqnum = 43, acknum = -1, checksum = 51358, RRRRRRRRRRRRRRRRRRRR
+expectSequenceNumberSend is 44
+Receiver Correct.: seqnum = 41, acknum = -1, checksum = 56500, PPPPPPPPPPPPPPPPPPPP
+******模拟网络环境******：向上递交给应用层数据：PPPPPPPPPPPPPPPPPPPP
+Receiver Sending Correct Content.: seqnum = -1, acknum = 41, checksum = 12810, ....................
+Sending content : seqnum = 44, acknum = -1, checksum = 48787, SSSSSSSSSSSSSSSSSSSS
+expectSequenceNumberSend is 45
+Correct.: seqnum = -1, acknum = 41, checksum = 12810, ....................
+sliding window [ 42 43 44 * ]
+Receiver did not receive the sender's message correctly, message number is incorrect: seqnum = 43, acknum = -1, checksum = 51358, RRRRRRRRRRRRRRRRRRRR
+Expecting 42
+Recending : seqnum = -1, acknum = 41, checksum = 12810, ....................
+Receiver did not receive the sender's message correctly, data verification error: seqnum = -999999, acknum = -1, checksum = 48787, SSSSSSSSSSSSSSSSSSSS
+Recending : seqnum = -1, acknum = 41, checksum = 12810, ....................
+Incorrect, waiting.
+Incorrect, waiting.
+Sending timeout, N steps back.
+Resending42.
+Sender's timer has expired. Resending the message: seqnum = 42, acknum = -1, checksum = 53929, QQQQQQQQQQQQQQQQQQQQ
+Resending43.
+Sender's timer has expired. Resending the message: seqnum = 43, acknum = -1, checksum = 51358, RRRRRRRRRRRRRRRRRRRR
+Resending44.
+Sender's timer has expired. Resending the message: seqnum = 44, acknum = -1, checksum = 48787, SSSSSSSSSSSSSSSSSSSS
+Receiver Correct.: seqnum = 42, acknum = -1, checksum = 53929, QQQQQQQQQQQQQQQQQQQQ
+******模拟网络环境******：向上递交给应用层数据：QQQQQQQQQQQQQQQQQQQQ
+Receiver Sending Correct Content.: seqnum = -1, acknum = 42, checksum = 12809, ....................
+Receiver Correct.: seqnum = 43, acknum = -1, checksum = 51358, RRRRRRRRRRRRRRRRRRRR
+******模拟网络环境******：向上递交给应用层数据：RRRRRRRRRRRRRRRRRRRR
+Receiver Sending Correct Content.: seqnum = -1, acknum = 43, checksum = 12808, ....................
+Correct.: seqnum = -1, acknum = 42, checksum = 12809, ....................
+sliding window [ 43 44 * * ]
+Correct.: seqnum = -1, acknum = 43, checksum = 12808, ....................
+sliding window [ 44 * * * ]
+Receiver Correct.: seqnum = 44, acknum = -1, checksum = 48787, SSSSSSSSSSSSSSSSSSSS
+******模拟网络环境******：向上递交给应用层数据：SSSSSSSSSSSSSSSSSSSS
+Receiver Sending Correct Content.: seqnum = -1, acknum = 44, checksum = 12807, ....................
+Correct.: seqnum = -1, acknum = 44, checksum = 12807, ....................
+sliding window [ * * * * ]
+All sent. Close timer.
+Sending content : seqnum = 45, acknum = -1, checksum = 46216, TTTTTTTTTTTTTTTTTTTT
+Sending timer 
+expectSequenceNumberSend is 46
+Sending content : seqnum = 46, acknum = -1, checksum = 43645, UUUUUUUUUUUUUUUUUUUU
+expectSequenceNumberSend is 47
+Sending content : seqnum = 47, acknum = -1, checksum = 41074, VVVVVVVVVVVVVVVVVVVV
+expectSequenceNumberSend is 48
+Sending content : seqnum = 48, acknum = -1, checksum = 38503, WWWWWWWWWWWWWWWWWWWW
+expectSequenceNumberSend is 49
+Receiver did not receive the sender's message correctly, message number is incorrect: seqnum = 46, acknum = -1, checksum = 43645, UUUUUUUUUUUUUUUUUUUU
+Expecting 45
+Recending : seqnum = -1, acknum = 44, checksum = 12807, ....................
+Incorrect, waiting.
+Receiver did not receive the sender's message correctly, message number is incorrect: seqnum = 47, acknum = -1, checksum = 41074, VVVVVVVVVVVVVVVVVVVV
+Expecting 45
+Recending : seqnum = -1, acknum = 44, checksum = 12807, ....................
+Incorrect, waiting.
+Receiver did not receive the sender's message correctly, message number is incorrect: seqnum = 48, acknum = -1, checksum = 38503, WWWWWWWWWWWWWWWWWWWW
+Expecting 45
+Recending : seqnum = -1, acknum = 44, checksum = 12807, ....................
+Incorrect, waiting.
+Sending timeout, N steps back.
+Resending45.
+Sender's timer has expired. Resending the message: seqnum = 45, acknum = -1, checksum = 46216, TTTTTTTTTTTTTTTTTTTT
+Resending46.
+Sender's timer has expired. Resending the message: seqnum = 46, acknum = -1, checksum = 43645, UUUUUUUUUUUUUUUUUUUU
+Resending47.
+Sender's timer has expired. Resending the message: seqnum = 47, acknum = -1, checksum = 41074, VVVVVVVVVVVVVVVVVVVV
+Resending48.
+Sender's timer has expired. Resending the message: seqnum = 48, acknum = -1, checksum = 38503, WWWWWWWWWWWWWWWWWWWW
+Receiver Correct.: seqnum = 45, acknum = -1, checksum = 46216, TTTTTTTTTTTTTTTTTTTT
+******模拟网络环境******：向上递交给应用层数据：TTTTTTTTTTTTTTTTTTTT
+Receiver Sending Correct Content.: seqnum = -1, acknum = 45, checksum = 12806, ....................
+Correct.: seqnum = -1, acknum = 45, checksum = 12806, ....................
+sliding window [ 46 47 48 * ]
+Receiver Correct.: seqnum = 46, acknum = -1, checksum = 43645, UUUUUUUUUUUUUUUUUUUU
+******模拟网络环境******：向上递交给应用层数据：UUUUUUUUUUUUUUUUUUUU
+Receiver Sending Correct Content.: seqnum = -1, acknum = 46, checksum = 12805, ....................
+Correct.: seqnum = -1, acknum = 46, checksum = 12805, ....................
+sliding window [ 47 48 * * ]
+Receiver Correct.: seqnum = 47, acknum = -1, checksum = 41074, VVVVVVVVVVVVVVVVVVVV
+******模拟网络环境******：向上递交给应用层数据：VVVVVVVVVVVVVVVVVVVV
+Receiver Sending Correct Content.: seqnum = -1, acknum = 47, checksum = 12804, ....................
+Receiver Correct.: seqnum = 48, acknum = -1, checksum = 38503, WWWWWWWWWWWWWWWWWWWW
+******模拟网络环境******：向上递交给应用层数据：WWWWWWWWWWWWWWWWWWWW
+Receiver Sending Correct Content.: seqnum = -1, acknum = 48, checksum = 12803, ....................
+Correct.: seqnum = -1, acknum = 48, checksum = 12803, ....................
+sliding window [ * * * * ]
+All sent. Close timer.
+Sending content : seqnum = 49, acknum = -1, checksum = 35932, XXXXXXXXXXXXXXXXXXXX
+Sending timer 
+expectSequenceNumberSend is 50
+Sending content : seqnum = 50, acknum = -1, checksum = 33361, YYYYYYYYYYYYYYYYYYYY
+expectSequenceNumberSend is 51
+Sending content : seqnum = 51, acknum = -1, checksum = 30790, ZZZZZZZZZZZZZZZZZZZZ
+expectSequenceNumberSend is 52
+Sending content : seqnum = 52, acknum = -1, checksum = 29504, AAAAAAAAAAAAAAAAAAAA
+expectSequenceNumberSend is 53
+Receiver Correct.: seqnum = 49, acknum = -1, checksum = 35932, XXXXXXXXXXXXXXXXXXXX
+******模拟网络环境******：向上递交给应用层数据：XXXXXXXXXXXXXXXXXXXX
+Receiver Sending Correct Content.: seqnum = -1, acknum = 49, checksum = 12802, ....................
+Receiver did not receive the sender's message correctly, data verification error: seqnum = 50, acknum = -1, checksum = 33361, ZYYYYYYYYYYYYYYYYYYY
+Recending : seqnum = -1, acknum = 49, checksum = 12802, ....................
+Correct.: seqnum = -1, acknum = 49, checksum = 12802, ....................
+sliding window [ 50 51 52 * ]
+Receiver did not receive the sender's message correctly, message number is incorrect: seqnum = 51, acknum = -1, checksum = 30790, ZZZZZZZZZZZZZZZZZZZZ
+Expecting 50
+Recending : seqnum = -1, acknum = 49, checksum = 12802, ....................
+Receiver did not receive the sender's message correctly, data verification error: seqnum = 52, acknum = -1, checksum = 29504, BAAAAAAAAAAAAAAAAAAA
+Recending : seqnum = -1, acknum = 49, checksum = 12802, ....................
+Incorrect, waiting.
+Sending timeout, N steps back.
+Resending50.
+Sender's timer has expired. Resending the message: seqnum = 50, acknum = -1, checksum = 33361, YYYYYYYYYYYYYYYYYYYY
+Resending51.
+Sender's timer has expired. Resending the message: seqnum = 51, acknum = -1, checksum = 30790, ZZZZZZZZZZZZZZZZZZZZ
+Resending52.
+Sender's timer has expired. Resending the message: seqnum = 52, acknum = -1, checksum = 29504, AAAAAAAAAAAAAAAAAAAA
+Receiver Correct.: seqnum = 50, acknum = -1, checksum = 33361, YYYYYYYYYYYYYYYYYYYY
+******模拟网络环境******：向上递交给应用层数据：YYYYYYYYYYYYYYYYYYYY
+Receiver Sending Correct Content.: seqnum = -1, acknum = 50, checksum = 12801, ....................
+Receiver Correct.: seqnum = 51, acknum = -1, checksum = 30790, ZZZZZZZZZZZZZZZZZZZZ
+******模拟网络环境******：向上递交给应用层数据：ZZZZZZZZZZZZZZZZZZZZ
+Receiver Sending Correct Content.: seqnum = -1, acknum = 51, checksum = 12800, ....................
+ACK Broken
+Correct.: seqnum = -1, acknum = 51, checksum = 12800, ....................
+sliding window [ 52 * * * ]
+Receiver Correct.: seqnum = 52, acknum = -1, checksum = 29504, AAAAAAAAAAAAAAAAAAAA
+******模拟网络环境******：向上递交给应用层数据：AAAAAAAAAAAAAAAAAAAA
+Receiver Sending Correct Content.: seqnum = -1, acknum = 52, checksum = 12799, ....................
+Correct.: seqnum = -1, acknum = 52, checksum = 12799, ....................
+sliding window [ * * * * ]
+All sent. Close timer.
+Sending content : seqnum = 53, acknum = -1, checksum = 26933, BBBBBBBBBBBBBBBBBBBB
+Sending timer 
+expectSequenceNumberSend is 54
+Sending content : seqnum = 54, acknum = -1, checksum = 24362, CCCCCCCCCCCCCCCCCCCC
+expectSequenceNumberSend is 55
+Sending content : seqnum = 55, acknum = -1, checksum = 21791, DDDDDDDDDDDDDDDDDDDD
+expectSequenceNumberSend is 56
+Sending content : seqnum = 56, acknum = -1, checksum = 19220, EEEEEEEEEEEEEEEEEEEE
+expectSequenceNumberSend is 57
+Receiver Correct.: seqnum = 53, acknum = -1, checksum = 26933, BBBBBBBBBBBBBBBBBBBB
+******模拟网络环境******：向上递交给应用层数据：BBBBBBBBBBBBBBBBBBBB
+Receiver Sending Correct Content.: seqnum = -1, acknum = 53, checksum = 12798, ....................
+Receiver Correct.: seqnum = 54, acknum = -1, checksum = 24362, CCCCCCCCCCCCCCCCCCCC
+******模拟网络环境******：向上递交给应用层数据：CCCCCCCCCCCCCCCCCCCC
+Receiver Sending Correct Content.: seqnum = -1, acknum = 54, checksum = 12797, ....................
+Receiver Correct.: seqnum = 55, acknum = -1, checksum = 21791, DDDDDDDDDDDDDDDDDDDD
+******模拟网络环境******：向上递交给应用层数据：DDDDDDDDDDDDDDDDDDDD
+Receiver Sending Correct Content.: seqnum = -1, acknum = 55, checksum = 12796, ....................
+Correct.: seqnum = -1, acknum = 53, checksum = 12798, ....................
+sliding window [ 54 55 56 * ]
+Correct.: seqnum = -1, acknum = 54, checksum = 12797, ....................
+sliding window [ 55 56 * * ]
+Receiver Correct.: seqnum = 56, acknum = -1, checksum = 19220, EEEEEEEEEEEEEEEEEEEE
+******模拟网络环境******：向上递交给应用层数据：EEEEEEEEEEEEEEEEEEEE
+Receiver Sending Correct Content.: seqnum = -1, acknum = 56, checksum = 12795, ....................
+Correct.: seqnum = -1, acknum = 55, checksum = 12796, ....................
+sliding window [ 56 * * * ]
+Correct.: seqnum = -1, acknum = 56, checksum = 12795, ....................
+sliding window [ * * * * ]
+All sent. Close timer.
+Sending content : seqnum = 57, acknum = -1, checksum = 16649, FFFFFFFFFFFFFFFFFFFF
+Sending timer 
+expectSequenceNumberSend is 58
+Sending content : seqnum = 58, acknum = -1, checksum = 14078, GGGGGGGGGGGGGGGGGGGG
+expectSequenceNumberSend is 59
+Sending content : seqnum = 59, acknum = -1, checksum = 11507, HHHHHHHHHHHHHHHHHHHH
+expectSequenceNumberSend is 60
+Sending content : seqnum = 60, acknum = -1, checksum = 8936, IIIIIIIIIIIIIIIIIIII
+expectSequenceNumberSend is 61
+Receiver Correct.: seqnum = 57, acknum = -1, checksum = 16649, FFFFFFFFFFFFFFFFFFFF
+******模拟网络环境******：向上递交给应用层数据：FFFFFFFFFFFFFFFFFFFF
+Receiver Sending Correct Content.: seqnum = -1, acknum = 57, checksum = 12794, ....................
+Correct.: seqnum = -1, acknum = 57, checksum = 12794, ....................
+sliding window [ 58 59 60 * ]
+Receiver Correct.: seqnum = 58, acknum = -1, checksum = 14078, GGGGGGGGGGGGGGGGGGGG
+******模拟网络环境******：向上递交给应用层数据：GGGGGGGGGGGGGGGGGGGG
+Receiver Sending Correct Content.: seqnum = -1, acknum = 58, checksum = 12793, ....................
+Receiver Correct.: seqnum = 59, acknum = -1, checksum = 11507, HHHHHHHHHHHHHHHHHHHH
+******模拟网络环境******：向上递交给应用层数据：HHHHHHHHHHHHHHHHHHHH
+Receiver Sending Correct Content.: seqnum = -1, acknum = 59, checksum = 12792, ....................
+Correct.: seqnum = -1, acknum = 58, checksum = 12793, ....................
+sliding window [ 59 60 * * ]
+Receiver Correct.: seqnum = 60, acknum = -1, checksum = 8936, IIIIIIIIIIIIIIIIIIII
+******模拟网络环境******：向上递交给应用层数据：IIIIIIIIIIIIIIIIIIII
+Receiver Sending Correct Content.: seqnum = -1, acknum = 60, checksum = 12791, ....................
+ACK Broken
+Correct.: seqnum = -1, acknum = 60, checksum = 12791, ....................
+sliding window [ * * * * ]
+All sent. Close timer.
+Sending content : seqnum = 61, acknum = -1, checksum = 6365, JJJJJJJJJJJJJJJJJJJJ
+Sending timer 
+expectSequenceNumberSend is 62
+Sending content : seqnum = 62, acknum = -1, checksum = 3794, KKKKKKKKKKKKKKKKKKKK
+expectSequenceNumberSend is 63
+Sending content : seqnum = 63, acknum = -1, checksum = 1223, LLLLLLLLLLLLLLLLLLLL
+expectSequenceNumberSend is 64
+Sending content : seqnum = 64, acknum = -1, checksum = 64187, MMMMMMMMMMMMMMMMMMMM
+expectSequenceNumberSend is 65
+Receiver Correct.: seqnum = 61, acknum = -1, checksum = 6365, JJJJJJJJJJJJJJJJJJJJ
+******模拟网络环境******：向上递交给应用层数据：JJJJJJJJJJJJJJJJJJJJ
+Receiver Sending Correct Content.: seqnum = -1, acknum = 61, checksum = 12790, ....................
+Receiver Correct.: seqnum = 62, acknum = -1, checksum = 3794, KKKKKKKKKKKKKKKKKKKK
+******模拟网络环境******：向上递交给应用层数据：KKKKKKKKKKKKKKKKKKKK
+Receiver Sending Correct Content.: seqnum = -1, acknum = 62, checksum = 12789, ....................
+Correct.: seqnum = -1, acknum = 61, checksum = 12790, ....................
+sliding window [ 62 63 64 * ]
+Correct.: seqnum = -1, acknum = 62, checksum = 12789, ....................
+sliding window [ 63 64 * * ]
+Receiver Correct.: seqnum = 63, acknum = -1, checksum = 1223, LLLLLLLLLLLLLLLLLLLL
+******模拟网络环境******：向上递交给应用层数据：LLLLLLLLLLLLLLLLLLLL
+Receiver Sending Correct Content.: seqnum = -1, acknum = 63, checksum = 12788, ....................
+Receiver Correct.: seqnum = 64, acknum = -1, checksum = 64187, MMMMMMMMMMMMMMMMMMMM
+******模拟网络环境******：向上递交给应用层数据：MMMMMMMMMMMMMMMMMMMM
+Receiver Sending Correct Content.: seqnum = -1, acknum = 64, checksum = 12787, ....................
+Correct.: seqnum = -1, acknum = 63, checksum = 12788, ....................
+sliding window [ 64 * * * ]
+Correct.: seqnum = -1, acknum = 64, checksum = 12787, ....................
+sliding window [ * * * * ]
+All sent. Close timer.
+Sending content : seqnum = 65, acknum = -1, checksum = 61616, NNNNNNNNNNNNNNNNNNNN
+Sending timer 
+expectSequenceNumberSend is 66
+Sending content : seqnum = 66, acknum = -1, checksum = 59045, OOOOOOOOOOOOOOOOOOOO
+expectSequenceNumberSend is 67
+Sending content : seqnum = 67, acknum = -1, checksum = 56474, PPPPPPPPPPPPPPPPPPPP
+expectSequenceNumberSend is 68
+Sending content : seqnum = 68, acknum = -1, checksum = 53903, QQQQQQQQQQQQQQQQQQQQ
+expectSequenceNumberSend is 69
+Receiver Correct.: seqnum = 65, acknum = -1, checksum = 61616, NNNNNNNNNNNNNNNNNNNN
+******模拟网络环境******：向上递交给应用层数据：NNNNNNNNNNNNNNNNNNNN
+Receiver Sending Correct Content.: seqnum = -1, acknum = 65, checksum = 12786, ....................
+Receiver Correct.: seqnum = 66, acknum = -1, checksum = 59045, OOOOOOOOOOOOOOOOOOOO
+******模拟网络环境******：向上递交给应用层数据：OOOOOOOOOOOOOOOOOOOO
+Receiver Sending Correct Content.: seqnum = -1, acknum = 66, checksum = 12785, ....................
+Correct.: seqnum = -1, acknum = 66, checksum = 12785, ....................
+sliding window [ 67 68 * * ]
+Receiver Correct.: seqnum = 67, acknum = -1, checksum = 56474, PPPPPPPPPPPPPPPPPPPP
+******模拟网络环境******：向上递交给应用层数据：PPPPPPPPPPPPPPPPPPPP
+Receiver Sending Correct Content.: seqnum = -1, acknum = 67, checksum = 12784, ....................
+Correct.: seqnum = -1, acknum = 67, checksum = 12784, ....................
+sliding window [ 68 * * * ]
+Receiver Correct.: seqnum = 68, acknum = -1, checksum = 53903, QQQQQQQQQQQQQQQQQQQQ
+******模拟网络环境******：向上递交给应用层数据：QQQQQQQQQQQQQQQQQQQQ
+Receiver Sending Correct Content.: seqnum = -1, acknum = 68, checksum = 12783, ....................
+Correct.: seqnum = -1, acknum = 68, checksum = 12783, ....................
+sliding window [ * * * * ]
+All sent. Close timer.
+Sending content : seqnum = 69, acknum = -1, checksum = 51332, RRRRRRRRRRRRRRRRRRRR
+Sending timer 
+expectSequenceNumberSend is 70
+Sending content : seqnum = 70, acknum = -1, checksum = 48761, SSSSSSSSSSSSSSSSSSSS
+expectSequenceNumberSend is 71
+Sending content : seqnum = 71, acknum = -1, checksum = 46190, TTTTTTTTTTTTTTTTTTTT
+expectSequenceNumberSend is 72
+Sending content : seqnum = 72, acknum = -1, checksum = 43619, UUUUUUUUUUUUUUUUUUUU
+expectSequenceNumberSend is 73
+Receiver Correct.: seqnum = 69, acknum = -1, checksum = 51332, RRRRRRRRRRRRRRRRRRRR
+******模拟网络环境******：向上递交给应用层数据：RRRRRRRRRRRRRRRRRRRR
+Receiver Sending Correct Content.: seqnum = -1, acknum = 69, checksum = 12782, ....................
+Receiver Correct.: seqnum = 70, acknum = -1, checksum = 48761, SSSSSSSSSSSSSSSSSSSS
+******模拟网络环境******：向上递交给应用层数据：SSSSSSSSSSSSSSSSSSSS
+Receiver Sending Correct Content.: seqnum = -1, acknum = 70, checksum = 12781, ....................
+Correct.: seqnum = -1, acknum = 69, checksum = 12782, ....................
+sliding window [ 70 71 72 * ]
+Receiver Correct.: seqnum = 71, acknum = -1, checksum = 46190, TTTTTTTTTTTTTTTTTTTT
+******模拟网络环境******：向上递交给应用层数据：TTTTTTTTTTTTTTTTTTTT
+Receiver Sending Correct Content.: seqnum = -1, acknum = 71, checksum = 12780, ....................
+Correct.: seqnum = -1, acknum = 70, checksum = 12781, ....................
+sliding window [ 71 72 * * ]
+Correct.: seqnum = -1, acknum = 71, checksum = 12780, ....................
+sliding window [ 72 * * * ]
+Sending timeout, N steps back.
+Resending72.
+Sender's timer has expired. Resending the message: seqnum = 72, acknum = -1, checksum = 43619, UUUUUUUUUUUUUUUUUUUU
+Receiver did not receive the sender's message correctly, data verification error: seqnum = -999999, acknum = -1, checksum = 43619, UUUUUUUUUUUUUUUUUUUU
+Recending : seqnum = -1, acknum = 71, checksum = 12780, ....................
+Incorrect, waiting.
+Sending timeout, N steps back.
+Resending72.
+Sender's timer has expired. Resending the message: seqnum = 72, acknum = -1, checksum = 43619, UUUUUUUUUUUUUUUUUUUU
+Sending timeout, N steps back.
+Resending72.
+Sender's timer has expired. Resending the message: seqnum = 72, acknum = -1, checksum = 43619, UUUUUUUUUUUUUUUUUUUU
+Receiver Correct.: seqnum = 72, acknum = -1, checksum = 43619, UUUUUUUUUUUUUUUUUUUU
+******模拟网络环境******：向上递交给应用层数据：UUUUUUUUUUUUUUUUUUUU
+Receiver Sending Correct Content.: seqnum = -1, acknum = 72, checksum = 12779, ....................
+Correct.: seqnum = -1, acknum = 72, checksum = 12779, ....................
+sliding window [ * * * * ]
+All sent. Close timer.
+Sending content : seqnum = 73, acknum = -1, checksum = 41048, VVVVVVVVVVVVVVVVVVVV
+Sending timer 
+expectSequenceNumberSend is 74
+Sending content : seqnum = 74, acknum = -1, checksum = 38477, WWWWWWWWWWWWWWWWWWWW
+expectSequenceNumberSend is 75
+Sending content : seqnum = 75, acknum = -1, checksum = 35906, XXXXXXXXXXXXXXXXXXXX
+expectSequenceNumberSend is 76
+Sending content : seqnum = 76, acknum = -1, checksum = 33335, YYYYYYYYYYYYYYYYYYYY
+expectSequenceNumberSend is 77
+Receiver Correct.: seqnum = 73, acknum = -1, checksum = 41048, VVVVVVVVVVVVVVVVVVVV
+******模拟网络环境******：向上递交给应用层数据：VVVVVVVVVVVVVVVVVVVV
+Receiver Sending Correct Content.: seqnum = -1, acknum = 73, checksum = 12778, ....................
+Receiver did not receive the sender's message correctly, data verification error: seqnum = 74, acknum = -1, checksum = 38477, XWWWWWWWWWWWWWWWWWWW
+Recending : seqnum = -1, acknum = 73, checksum = 12778, ....................
+Receiver did not receive the sender's message correctly, message number is incorrect: seqnum = 75, acknum = -1, checksum = 35906, XXXXXXXXXXXXXXXXXXXX
+Expecting 74
+Recending : seqnum = -1, acknum = 73, checksum = 12778, ....................
+Correct.: seqnum = -1, acknum = 73, checksum = 12778, ....................
+sliding window [ 74 75 76 * ]
+Incorrect, waiting.
+Receiver did not receive the sender's message correctly, message number is incorrect: seqnum = 76, acknum = -1, checksum = 33335, YYYYYYYYYYYYYYYYYYYY
+Expecting 74
+Recending : seqnum = -1, acknum = 73, checksum = 12778, ....................
+Incorrect, waiting.
+ACK Broken
+Sending timeout, N steps back.
+Resending74.
+Sender's timer has expired. Resending the message: seqnum = 74, acknum = -1, checksum = 38477, WWWWWWWWWWWWWWWWWWWW
+Resending75.
+Sender's timer has expired. Resending the message: seqnum = 75, acknum = -1, checksum = 35906, XXXXXXXXXXXXXXXXXXXX
+Resending76.
+Sender's timer has expired. Resending the message: seqnum = 76, acknum = -1, checksum = 33335, YYYYYYYYYYYYYYYYYYYY
+Receiver did not receive the sender's message correctly, message number is incorrect: seqnum = 75, acknum = -1, checksum = 35906, XXXXXXXXXXXXXXXXXXXX
+Expecting 74
+Recending : seqnum = -1, acknum = 73, checksum = 12778, ....................
+Receiver did not receive the sender's message correctly, message number is incorrect: seqnum = 76, acknum = -1, checksum = 33335, YYYYYYYYYYYYYYYYYYYY
+Expecting 74
+Recending : seqnum = -1, acknum = 73, checksum = 12778, ....................
+Incorrect, waiting.
+Incorrect, waiting.
+Sending timeout, N steps back.
+Resending74.
+Sender's timer has expired. Resending the message: seqnum = 74, acknum = -1, checksum = 38477, WWWWWWWWWWWWWWWWWWWW
+Resending75.
+Sender's timer has expired. Resending the message: seqnum = 75, acknum = -1, checksum = 35906, XXXXXXXXXXXXXXXXXXXX
+Resending76.
+Sender's timer has expired. Resending the message: seqnum = 76, acknum = -1, checksum = 33335, YYYYYYYYYYYYYYYYYYYY
+Receiver Correct.: seqnum = 74, acknum = -1, checksum = 38477, WWWWWWWWWWWWWWWWWWWW
+******模拟网络环境******：向上递交给应用层数据：WWWWWWWWWWWWWWWWWWWW
+Receiver Sending Correct Content.: seqnum = -1, acknum = 74, checksum = 12777, ....................
+Correct.: seqnum = -1, acknum = 74, checksum = 12777, ....................
+sliding window [ 75 76 * * ]
+Receiver Correct.: seqnum = 75, acknum = -1, checksum = 35906, XXXXXXXXXXXXXXXXXXXX
+******模拟网络环境******：向上递交给应用层数据：XXXXXXXXXXXXXXXXXXXX
+Receiver Sending Correct Content.: seqnum = -1, acknum = 75, checksum = 12776, ....................
+Correct.: seqnum = -1, acknum = 75, checksum = 12776, ....................
+sliding window [ 76 * * * ]
+Receiver Correct.: seqnum = 76, acknum = -1, checksum = 33335, YYYYYYYYYYYYYYYYYYYY
+******模拟网络环境******：向上递交给应用层数据：YYYYYYYYYYYYYYYYYYYY
+Receiver Sending Correct Content.: seqnum = -1, acknum = 76, checksum = 12775, ....................
+Correct.: seqnum = -1, acknum = 76, checksum = 12775, ....................
+sliding window [ * * * * ]
+All sent. Close timer.
+Sending content : seqnum = 77, acknum = -1, checksum = 30764, ZZZZZZZZZZZZZZZZZZZZ
+Sending timer 
+expectSequenceNumberSend is 78
+Sending content : seqnum = 78, acknum = -1, checksum = 29478, AAAAAAAAAAAAAAAAAAAA
+expectSequenceNumberSend is 79
+Sending content : seqnum = 79, acknum = -1, checksum = 26907, BBBBBBBBBBBBBBBBBBBB
+expectSequenceNumberSend is 80
+Sending content : seqnum = 80, acknum = -1, checksum = 24336, CCCCCCCCCCCCCCCCCCCC
+expectSequenceNumberSend is 81
+Receiver Correct.: seqnum = 77, acknum = -1, checksum = 30764, ZZZZZZZZZZZZZZZZZZZZ
+******模拟网络环境******：向上递交给应用层数据：ZZZZZZZZZZZZZZZZZZZZ
+Receiver Sending Correct Content.: seqnum = -1, acknum = 77, checksum = 12774, ....................
+Correct.: seqnum = -1, acknum = 77, checksum = 12774, ....................
+sliding window [ 78 79 80 * ]
+Receiver Correct.: seqnum = 78, acknum = -1, checksum = 29478, AAAAAAAAAAAAAAAAAAAA
+******模拟网络环境******：向上递交给应用层数据：AAAAAAAAAAAAAAAAAAAA
+Receiver Sending Correct Content.: seqnum = -1, acknum = 78, checksum = 12773, ....................
+Correct.: seqnum = -1, acknum = 78, checksum = 12773, ....................
+sliding window [ 79 80 * * ]
+Receiver Correct.: seqnum = 79, acknum = -1, checksum = 26907, BBBBBBBBBBBBBBBBBBBB
+******模拟网络环境******：向上递交给应用层数据：BBBBBBBBBBBBBBBBBBBB
+Receiver Sending Correct Content.: seqnum = -1, acknum = 79, checksum = 12772, ....................
+ACK Broken
+Receiver Correct.: seqnum = 80, acknum = -1, checksum = 24336, CCCCCCCCCCCCCCCCCCCC
+******模拟网络环境******：向上递交给应用层数据：CCCCCCCCCCCCCCCCCCCC
+Receiver Sending Correct Content.: seqnum = -1, acknum = 80, checksum = 12771, ....................
+Correct.: seqnum = -1, acknum = 80, checksum = 12771, ....................
+sliding window [ * * * * ]
+All sent. Close timer.
+Sending content : seqnum = 81, acknum = -1, checksum = 21765, DDDDDDDDDDDDDDDDDDDD
+Sending timer 
+expectSequenceNumberSend is 82
+Sending content : seqnum = 82, acknum = -1, checksum = 19194, EEEEEEEEEEEEEEEEEEEE
+expectSequenceNumberSend is 83
+Sending content : seqnum = 83, acknum = -1, checksum = 16623, FFFFFFFFFFFFFFFFFFFF
+expectSequenceNumberSend is 84
+Sending content : seqnum = 84, acknum = -1, checksum = 14052, GGGGGGGGGGGGGGGGGGGG
+expectSequenceNumberSend is 85
+Receiver Correct.: seqnum = 81, acknum = -1, checksum = 21765, DDDDDDDDDDDDDDDDDDDD
+******模拟网络环境******：向上递交给应用层数据：DDDDDDDDDDDDDDDDDDDD
+Receiver Sending Correct Content.: seqnum = -1, acknum = 81, checksum = 12770, ....................
+Receiver Correct.: seqnum = 82, acknum = -1, checksum = 19194, EEEEEEEEEEEEEEEEEEEE
+******模拟网络环境******：向上递交给应用层数据：EEEEEEEEEEEEEEEEEEEE
+Receiver Sending Correct Content.: seqnum = -1, acknum = 82, checksum = 12769, ....................
+Correct.: seqnum = -1, acknum = 81, checksum = 12770, ....................
+sliding window [ 82 83 84 * ]
+Receiver Correct.: seqnum = 83, acknum = -1, checksum = 16623, FFFFFFFFFFFFFFFFFFFF
+******模拟网络环境******：向上递交给应用层数据：FFFFFFFFFFFFFFFFFFFF
+Receiver Sending Correct Content.: seqnum = -1, acknum = 83, checksum = 12768, ....................
+Correct.: seqnum = -1, acknum = 82, checksum = 12769, ....................
+sliding window [ 83 84 * * ]
+Receiver Correct.: seqnum = 84, acknum = -1, checksum = 14052, GGGGGGGGGGGGGGGGGGGG
+******模拟网络环境******：向上递交给应用层数据：GGGGGGGGGGGGGGGGGGGG
+Receiver Sending Correct Content.: seqnum = -1, acknum = 84, checksum = 12767, ....................
+Correct.: seqnum = -1, acknum = 84, checksum = 12767, ....................
+sliding window [ * * * * ]
+All sent. Close timer.
+Sending content : seqnum = 85, acknum = -1, checksum = 11481, HHHHHHHHHHHHHHHHHHHH
+Sending timer 
+expectSequenceNumberSend is 86
+Sending content : seqnum = 86, acknum = -1, checksum = 8910, IIIIIIIIIIIIIIIIIIII
+expectSequenceNumberSend is 87
+Sending content : seqnum = 87, acknum = -1, checksum = 6339, JJJJJJJJJJJJJJJJJJJJ
+expectSequenceNumberSend is 88
+Sending content : seqnum = 88, acknum = -1, checksum = 3768, KKKKKKKKKKKKKKKKKKKK
+expectSequenceNumberSend is 89
+Receiver Correct.: seqnum = 85, acknum = -1, checksum = 11481, HHHHHHHHHHHHHHHHHHHH
+******模拟网络环境******：向上递交给应用层数据：HHHHHHHHHHHHHHHHHHHH
+Receiver Sending Correct Content.: seqnum = -1, acknum = 85, checksum = 12766, ....................
+Receiver Correct.: seqnum = 86, acknum = -1, checksum = 8910, IIIIIIIIIIIIIIIIIIII
+******模拟网络环境******：向上递交给应用层数据：IIIIIIIIIIIIIIIIIIII
+Receiver Sending Correct Content.: seqnum = -1, acknum = 86, checksum = 12765, ....................
+Correct.: seqnum = -1, acknum = 85, checksum = 12766, ....................
+sliding window [ 86 87 88 * ]
+Receiver did not receive the sender's message correctly, message number is incorrect: seqnum = 88, acknum = -1, checksum = 3768, KKKKKKKKKKKKKKKKKKKK
+Expecting 87
+Recending : seqnum = -1, acknum = 86, checksum = 12765, ....................
+Correct.: seqnum = -1, acknum = 86, checksum = 12765, ....................
+sliding window [ 87 88 * * ]
+Incorrect, waiting.
+Sending timeout, N steps back.
+Resending87.
+Sender's timer has expired. Resending the message: seqnum = 87, acknum = -1, checksum = 6339, JJJJJJJJJJJJJJJJJJJJ
+Resending88.
+Sender's timer has expired. Resending the message: seqnum = 88, acknum = -1, checksum = 3768, KKKKKKKKKKKKKKKKKKKK
+Receiver Correct.: seqnum = 87, acknum = -1, checksum = 6339, JJJJJJJJJJJJJJJJJJJJ
+******模拟网络环境******：向上递交给应用层数据：JJJJJJJJJJJJJJJJJJJJ
+Receiver Sending Correct Content.: seqnum = -1, acknum = 87, checksum = 12764, ....................
+Receiver Correct.: seqnum = 88, acknum = -1, checksum = 3768, KKKKKKKKKKKKKKKKKKKK
+******模拟网络环境******：向上递交给应用层数据：KKKKKKKKKKKKKKKKKKKK
+Receiver Sending Correct Content.: seqnum = -1, acknum = 88, checksum = 12763, ....................
+Correct.: seqnum = -1, acknum = 88, checksum = 12763, ....................
+sliding window [ * * * * ]
+All sent. Close timer.
+Sending content : seqnum = 89, acknum = -1, checksum = 1197, LLLLLLLLLLLLLLLLLLLL
+Sending timer 
+expectSequenceNumberSend is 90
+Sending content : seqnum = 90, acknum = -1, checksum = 64161, MMMMMMMMMMMMMMMMMMMM
+expectSequenceNumberSend is 91
+Sending content : seqnum = 91, acknum = -1, checksum = 61590, NNNNNNNNNNNNNNNNNNNN
+expectSequenceNumberSend is 92
+Sending content : seqnum = 92, acknum = -1, checksum = 59019, OOOOOOOOOOOOOOOOOOOO
+expectSequenceNumberSend is 93
+Receiver Correct.: seqnum = 89, acknum = -1, checksum = 1197, LLLLLLLLLLLLLLLLLLLL
+******模拟网络环境******：向上递交给应用层数据：LLLLLLLLLLLLLLLLLLLL
+Receiver Sending Correct Content.: seqnum = -1, acknum = 89, checksum = 12762, ....................
+Correct.: seqnum = -1, acknum = 89, checksum = 12762, ....................
+sliding window [ 90 91 92 * ]
+Receiver Correct.: seqnum = 90, acknum = -1, checksum = 64161, MMMMMMMMMMMMMMMMMMMM
+******模拟网络环境******：向上递交给应用层数据：MMMMMMMMMMMMMMMMMMMM
+Receiver Sending Correct Content.: seqnum = -1, acknum = 90, checksum = 12761, ....................
+Receiver Correct.: seqnum = 91, acknum = -1, checksum = 61590, NNNNNNNNNNNNNNNNNNNN
+******模拟网络环境******：向上递交给应用层数据：NNNNNNNNNNNNNNNNNNNN
+Receiver Sending Correct Content.: seqnum = -1, acknum = 91, checksum = 12760, ....................
+Receiver Correct.: seqnum = 92, acknum = -1, checksum = 59019, OOOOOOOOOOOOOOOOOOOO
+******模拟网络环境******：向上递交给应用层数据：OOOOOOOOOOOOOOOOOOOO
+Receiver Sending Correct Content.: seqnum = -1, acknum = 92, checksum = 12759, ....................
+Correct.: seqnum = -1, acknum = 90, checksum = 12761, ....................
+sliding window [ 91 92 * * ]
+Correct.: seqnum = -1, acknum = 91, checksum = 12760, ....................
+sliding window [ 92 * * * ]
+Correct.: seqnum = -1, acknum = 92, checksum = 12759, ....................
+sliding window [ * * * * ]
+All sent. Close timer.
+Sending content : seqnum = 93, acknum = -1, checksum = 56448, PPPPPPPPPPPPPPPPPPPP
+Sending timer 
+expectSequenceNumberSend is 94
+Sending content : seqnum = 94, acknum = -1, checksum = 53877, QQQQQQQQQQQQQQQQQQQQ
+expectSequenceNumberSend is 95
+Sending content : seqnum = 95, acknum = -1, checksum = 51306, RRRRRRRRRRRRRRRRRRRR
+expectSequenceNumberSend is 96
+Sending content : seqnum = 96, acknum = -1, checksum = 48735, SSSSSSSSSSSSSSSSSSSS
+expectSequenceNumberSend is 97
+Receiver Correct.: seqnum = 93, acknum = -1, checksum = 56448, PPPPPPPPPPPPPPPPPPPP
+******模拟网络环境******：向上递交给应用层数据：PPPPPPPPPPPPPPPPPPPP
+Receiver Sending Correct Content.: seqnum = -1, acknum = 93, checksum = 12758, ....................
+Receiver Correct.: seqnum = 94, acknum = -1, checksum = 53877, QQQQQQQQQQQQQQQQQQQQ
+******模拟网络环境******：向上递交给应用层数据：QQQQQQQQQQQQQQQQQQQQ
+Receiver Sending Correct Content.: seqnum = -1, acknum = 94, checksum = 12757, ....................
+Receiver Correct.: seqnum = 95, acknum = -1, checksum = 51306, RRRRRRRRRRRRRRRRRRRR
+******模拟网络环境******：向上递交给应用层数据：RRRRRRRRRRRRRRRRRRRR
+Receiver Sending Correct Content.: seqnum = -1, acknum = 95, checksum = 12756, ....................
+Correct.: seqnum = -1, acknum = 93, checksum = 12758, ....................
+sliding window [ 94 95 96 * ]
+Receiver Correct.: seqnum = 96, acknum = -1, checksum = 48735, SSSSSSSSSSSSSSSSSSSS
+******模拟网络环境******：向上递交给应用层数据：SSSSSSSSSSSSSSSSSSSS
+Receiver Sending Correct Content.: seqnum = -1, acknum = 96, checksum = 12755, ....................
+Correct.: seqnum = -1, acknum = 94, checksum = 12757, ....................
+sliding window [ 95 96 * * ]
+Correct.: seqnum = -1, acknum = 95, checksum = 12756, ....................
+sliding window [ 96 * * * ]
+Correct.: seqnum = -1, acknum = 96, checksum = 12755, ....................
+sliding window [ * * * * ]
+All sent. Close timer.
+Sending content : seqnum = 97, acknum = -1, checksum = 46164, TTTTTTTTTTTTTTTTTTTT
+Sending timer 
+expectSequenceNumberSend is 98
+Sending content : seqnum = 98, acknum = -1, checksum = 43593, UUUUUUUUUUUUUUUUUUUU
+expectSequenceNumberSend is 99
+Sending content : seqnum = 99, acknum = -1, checksum = 41022, VVVVVVVVVVVVVVVVVVVV
+expectSequenceNumberSend is 100
+Sending content : seqnum = 100, acknum = -1, checksum = 38451, WWWWWWWWWWWWWWWWWWWW
+expectSequenceNumberSend is 101
+Receiver Correct.: seqnum = 97, acknum = -1, checksum = 46164, TTTTTTTTTTTTTTTTTTTT
+******模拟网络环境******：向上递交给应用层数据：TTTTTTTTTTTTTTTTTTTT
+Receiver Sending Correct Content.: seqnum = -1, acknum = 97, checksum = 12754, ....................
+Correct.: seqnum = -1, acknum = 97, checksum = 12754, ....................
+sliding window [ 98 99 100 * ]
+Receiver Correct.: seqnum = 98, acknum = -1, checksum = 43593, UUUUUUUUUUUUUUUUUUUU
+******模拟网络环境******：向上递交给应用层数据：UUUUUUUUUUUUUUUUUUUU
+Receiver Sending Correct Content.: seqnum = -1, acknum = 98, checksum = 12753, ....................
+Receiver did not receive the sender's message correctly, data verification error: seqnum = 99, acknum = -1, checksum = 41022, WVVVVVVVVVVVVVVVVVVV
+Recending : seqnum = -1, acknum = 98, checksum = 12753, ....................
+Correct.: seqnum = -1, acknum = 98, checksum = 12753, ....................
+sliding window [ 99 100 * * ]
+Receiver did not receive the sender's message correctly, message number is incorrect: seqnum = 100, acknum = -1, checksum = 38451, WWWWWWWWWWWWWWWWWWWW
+Expecting 99
+Recending : seqnum = -1, acknum = 98, checksum = 12753, ....................
+ACK Broken
+Sending timeout, N steps back.
+Resending99.
+Sender's timer has expired. Resending the message: seqnum = 99, acknum = -1, checksum = 41022, VVVVVVVVVVVVVVVVVVVV
+Resending100.
+Sender's timer has expired. Resending the message: seqnum = 100, acknum = -1, checksum = 38451, WWWWWWWWWWWWWWWWWWWW
+Receiver Correct.: seqnum = 99, acknum = -1, checksum = 41022, VVVVVVVVVVVVVVVVVVVV
+******模拟网络环境******：向上递交给应用层数据：VVVVVVVVVVVVVVVVVVVV
+Receiver Sending Correct Content.: seqnum = -1, acknum = 99, checksum = 12752, ....................
+Receiver Correct.: seqnum = 100, acknum = -1, checksum = 38451, WWWWWWWWWWWWWWWWWWWW
+******模拟网络环境******：向上递交给应用层数据：WWWWWWWWWWWWWWWWWWWW
+Receiver Sending Correct Content.: seqnum = -1, acknum = 100, checksum = 12751, ....................
+Correct.: seqnum = -1, acknum = 99, checksum = 12752, ....................
+sliding window [ 100 * * * ]
+Correct.: seqnum = -1, acknum = 100, checksum = 12751, ....................
+sliding window [ * * * * ]
+All sent. Close timer.
+Sending content : seqnum = 101, acknum = -1, checksum = 35880, XXXXXXXXXXXXXXXXXXXX
+Sending timer 
+expectSequenceNumberSend is 102
+Sending content : seqnum = 102, acknum = -1, checksum = 33309, YYYYYYYYYYYYYYYYYYYY
+expectSequenceNumberSend is 103
+Sending content : seqnum = 103, acknum = -1, checksum = 30738, ZZZZZZZZZZZZZZZZZZZZ
+expectSequenceNumberSend is 104
+Sending content : seqnum = 104, acknum = -1, checksum = 29769, EOF                 
+expectSequenceNumberSend is 105
+Receiver Correct.: seqnum = 101, acknum = -1, checksum = 35880, XXXXXXXXXXXXXXXXXXXX
+******模拟网络环境******：向上递交给应用层数据：XXXXXXXXXXXXXXXXXXXX
+Receiver Sending Correct Content.: seqnum = -1, acknum = 101, checksum = 12750, ....................
+ACK Broken
+Receiver Correct.: seqnum = 102, acknum = -1, checksum = 33309, YYYYYYYYYYYYYYYYYYYY
+******模拟网络环境******：向上递交给应用层数据：YYYYYYYYYYYYYYYYYYYY
+Receiver Sending Correct Content.: seqnum = -1, acknum = 102, checksum = 12749, ....................
+Correct.: seqnum = -1, acknum = 102, checksum = 12749, ....................
+sliding window [ 103 104 * * ]
+Receiver Correct.: seqnum = 103, acknum = -1, checksum = 30738, ZZZZZZZZZZZZZZZZZZZZ
+******模拟网络环境******：向上递交给应用层数据：ZZZZZZZZZZZZZZZZZZZZ
+Receiver Sending Correct Content.: seqnum = -1, acknum = 103, checksum = 12748, ....................
+Receiver Correct.: seqnum = 104, acknum = -1, checksum = 29769, EOF                 
+******模拟网络环境******：向上递交给应用层数据：EOF                  
+Receiver Sending Correct Content.: seqnum = -1, acknum = 104, checksum = 12747, ....................
+Correct.: seqnum = -1, acknum = 104, checksum = 12747, ....................
+sliding window [ * * * * ]
+All sent. Close timer.
+******模拟网络环境******：模拟网络环境已发送完应用层数据，关闭模拟网络环境
+已发送应用层Message个数: 105
+发送到网络层数据Packet个数: 142
+网络层丢失的数据Packet个数: 8
+网络层损坏的数据pakcet个数:9
+发送到网络层确认Packet个数:134
+网络层丢失的确认Packet个数: 16
+网络层损坏的确认Packet个数: 12
+

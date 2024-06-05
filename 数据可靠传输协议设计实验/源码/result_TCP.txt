@@ -1,0 +1,1191 @@
+******模拟网络环境******：模拟网络环境初始化...
+******模拟网络环境******：模拟网络环境启动...
+Sender sends message: seqnum = 0, acknum = -1, checksum = 29556, AAAAAAAAAAAAAAAAAAAA
+Sender Start Timer
+expectSequenceNumberSend is 1
+Receiver received correctly: seqnum = 0, acknum = -1, checksum = 29556, AAAAAAAAAAAAAAAAAAAA
+******模拟网络环境******：向上递交给应用层数据：AAAAAAAAAAAAAAAAAAAA
+Receiver sent confirmation message: seqnum = -1, acknum = 0, checksum = 12851, ....................
+Sender received confirmation: seqnum = -1, acknum = 0, checksum = 12851, ....................
+sliding window [ * * * * ]
+Done. Close Timer.
+Sender sends message: seqnum = 1, acknum = -1, checksum = 26985, BBBBBBBBBBBBBBBBBBBB
+Sender Start Timer
+expectSequenceNumberSend is 2
+Sender sends message: seqnum = 2, acknum = -1, checksum = 24414, CCCCCCCCCCCCCCCCCCCC
+expectSequenceNumberSend is 3
+Sender sends message: seqnum = 3, acknum = -1, checksum = 21843, DDDDDDDDDDDDDDDDDDDD
+expectSequenceNumberSend is 4
+Sender sends message: seqnum = 4, acknum = -1, checksum = 19272, EEEEEEEEEEEEEEEEEEEE
+expectSequenceNumberSend is 5
+Receiver received correctly: seqnum = 1, acknum = -1, checksum = 26985, BBBBBBBBBBBBBBBBBBBB
+******模拟网络环境******：向上递交给应用层数据：BBBBBBBBBBBBBBBBBBBB
+Receiver sent confirmation message: seqnum = -1, acknum = 1, checksum = 12850, ....................
+Sender received confirmation: seqnum = -1, acknum = 1, checksum = 12850, ....................
+sliding window [ 2 3 4 * ]
+Receiver received correctly: seqnum = 2, acknum = -1, checksum = 24414, CCCCCCCCCCCCCCCCCCCC
+******模拟网络环境******：向上递交给应用层数据：CCCCCCCCCCCCCCCCCCCC
+Receiver sent confirmation message: seqnum = -1, acknum = 2, checksum = 12849, ....................
+Sender received confirmation: seqnum = -1, acknum = 2, checksum = 12849, ....................
+sliding window [ 3 4 * * ]
+Receiver received correctly: seqnum = 3, acknum = -1, checksum = 21843, DDDDDDDDDDDDDDDDDDDD
+******模拟网络环境******：向上递交给应用层数据：DDDDDDDDDDDDDDDDDDDD
+Receiver sent confirmation message: seqnum = -1, acknum = 3, checksum = 12848, ....................
+Sender received confirmation: seqnum = -1, acknum = 3, checksum = 12848, ....................
+sliding window [ 4 * * * ]
+timeout
+resending4.
+Sender's timer has expired, resend the message: seqnum = 4, acknum = -1, checksum = 19272, EEEEEEEEEEEEEEEEEEEE
+timeout
+resending4.
+Sender's timer has expired, resend the message: seqnum = 4, acknum = -1, checksum = 19272, EEEEEEEEEEEEEEEEEEEE
+Receiver received correctly: seqnum = 4, acknum = -1, checksum = 19272, EEEEEEEEEEEEEEEEEEEE
+******模拟网络环境******：向上递交给应用层数据：EEEEEEEEEEEEEEEEEEEE
+Receiver sent confirmation message: seqnum = -1, acknum = 4, checksum = 12847, ....................
+Sender received confirmation: seqnum = -1, acknum = 4, checksum = 12847, ....................
+sliding window [ * * * * ]
+Done. Close Timer.
+Sender sends message: seqnum = 5, acknum = -1, checksum = 16701, FFFFFFFFFFFFFFFFFFFF
+Sender Start Timer
+expectSequenceNumberSend is 6
+Sender sends message: seqnum = 6, acknum = -1, checksum = 14130, GGGGGGGGGGGGGGGGGGGG
+expectSequenceNumberSend is 7
+Sender sends message: seqnum = 7, acknum = -1, checksum = 11559, HHHHHHHHHHHHHHHHHHHH
+expectSequenceNumberSend is 8
+Sender sends message: seqnum = 8, acknum = -1, checksum = 8988, IIIIIIIIIIIIIIIIIIII
+expectSequenceNumberSend is 9
+Receiver received correctly: seqnum = 5, acknum = -1, checksum = 16701, FFFFFFFFFFFFFFFFFFFF
+******模拟网络环境******：向上递交给应用层数据：FFFFFFFFFFFFFFFFFFFF
+Receiver sent confirmation message: seqnum = -1, acknum = 5, checksum = 12846, ....................
+Sender received confirmation: seqnum = -1, acknum = 5, checksum = 12846, ....................
+sliding window [ 6 7 8 * ]
+Receiver received an incorrect message sequence number: seqnum = 7, acknum = -1, checksum = 11559, HHHHHHHHHHHHHHHHHHHH
+expecting6
+Receiver resending confirmation message: seqnum = -1, acknum = 5, checksum = 12846, ....................
+Receiver data verification error: seqnum = -999999, acknum = -1, checksum = 8988, IIIIIIIIIIIIIIIIIIII
+Receiver resending confirmation message: seqnum = -1, acknum = 5, checksum = 12846, ....................
+wrong ACK, keep waiting
+timeout
+resending6.
+Sender's timer has expired, resend the message: seqnum = 6, acknum = -1, checksum = 14130, GGGGGGGGGGGGGGGGGGGG
+Receiver received correctly: seqnum = 6, acknum = -1, checksum = 14130, GGGGGGGGGGGGGGGGGGGG
+******模拟网络环境******：向上递交给应用层数据：GGGGGGGGGGGGGGGGGGGG
+Receiver sent confirmation message: seqnum = -1, acknum = 6, checksum = 12845, ....................
+Sender received confirmation: seqnum = -1, acknum = 6, checksum = 12845, ....................
+sliding window [ 7 8 * * ]
+timeout
+resending7.
+Sender's timer has expired, resend the message: seqnum = 7, acknum = -1, checksum = 11559, HHHHHHHHHHHHHHHHHHHH
+Receiver received correctly: seqnum = 7, acknum = -1, checksum = 11559, HHHHHHHHHHHHHHHHHHHH
+******模拟网络环境******：向上递交给应用层数据：HHHHHHHHHHHHHHHHHHHH
+Receiver sent confirmation message: seqnum = -1, acknum = 7, checksum = 12844, ....................
+Sender received confirmation: seqnum = -1, acknum = 7, checksum = 12844, ....................
+sliding window [ 8 * * * ]
+timeout
+resending8.
+Sender's timer has expired, resend the message: seqnum = 8, acknum = -1, checksum = 8988, IIIIIIIIIIIIIIIIIIII
+Receiver data verification error: seqnum = 8, acknum = -1, checksum = 8988, JIIIIIIIIIIIIIIIIIII
+Receiver resending confirmation message: seqnum = -1, acknum = 7, checksum = 12844, ....................
+wrong ACK, keep waiting
+timeout
+resending8.
+Sender's timer has expired, resend the message: seqnum = 8, acknum = -1, checksum = 8988, IIIIIIIIIIIIIIIIIIII
+Receiver received correctly: seqnum = 8, acknum = -1, checksum = 8988, IIIIIIIIIIIIIIIIIIII
+******模拟网络环境******：向上递交给应用层数据：IIIIIIIIIIIIIIIIIIII
+Receiver sent confirmation message: seqnum = -1, acknum = 8, checksum = 12843, ....................
+timeout
+resending8.
+Sender's timer has expired, resend the message: seqnum = 8, acknum = -1, checksum = 8988, IIIIIIIIIIIIIIIIIIII
+Receiver data verification error: seqnum = 8, acknum = -1, checksum = 8988, JIIIIIIIIIIIIIIIIIII
+Receiver resending confirmation message: seqnum = -1, acknum = 8, checksum = 12843, ....................
+Sender received confirmation: seqnum = -1, acknum = 8, checksum = 12843, ....................
+sliding window [ * * * * ]
+Done. Close Timer.
+Sender sends message: seqnum = 9, acknum = -1, checksum = 6417, JJJJJJJJJJJJJJJJJJJJ
+Sender Start Timer
+expectSequenceNumberSend is 10
+Sender sends message: seqnum = 10, acknum = -1, checksum = 3846, KKKKKKKKKKKKKKKKKKKK
+expectSequenceNumberSend is 11
+Sender sends message: seqnum = 11, acknum = -1, checksum = 1275, LLLLLLLLLLLLLLLLLLLL
+expectSequenceNumberSend is 12
+Sender sends message: seqnum = 12, acknum = -1, checksum = 64239, MMMMMMMMMMMMMMMMMMMM
+expectSequenceNumberSend is 13
+Receiver received an incorrect message sequence number: seqnum = 11, acknum = -1, checksum = 1275, LLLLLLLLLLLLLLLLLLLL
+expecting9
+Receiver resending confirmation message: seqnum = -1, acknum = 8, checksum = 12843, ....................
+wrong ACK, keep waiting
+timeout
+resending9.
+Sender's timer has expired, resend the message: seqnum = 9, acknum = -1, checksum = 6417, JJJJJJJJJJJJJJJJJJJJ
+Receiver received correctly: seqnum = 9, acknum = -1, checksum = 6417, JJJJJJJJJJJJJJJJJJJJ
+******模拟网络环境******：向上递交给应用层数据：JJJJJJJJJJJJJJJJJJJJ
+Receiver sent confirmation message: seqnum = -1, acknum = 9, checksum = 12842, ....................
+Sender received confirmation: seqnum = -1, acknum = 9, checksum = 12842, ....................
+sliding window [ 10 11 12 * ]
+timeout
+resending10.
+Sender's timer has expired, resend the message: seqnum = 10, acknum = -1, checksum = 3846, KKKKKKKKKKKKKKKKKKKK
+timeout
+resending10.
+Sender's timer has expired, resend the message: seqnum = 10, acknum = -1, checksum = 3846, KKKKKKKKKKKKKKKKKKKK
+timeout
+resending10.
+Sender's timer has expired, resend the message: seqnum = 10, acknum = -1, checksum = 3846, KKKKKKKKKKKKKKKKKKKK
+Receiver received correctly: seqnum = 10, acknum = -1, checksum = 3846, KKKKKKKKKKKKKKKKKKKK
+******模拟网络环境******：向上递交给应用层数据：KKKKKKKKKKKKKKKKKKKK
+Receiver sent confirmation message: seqnum = -1, acknum = 10, checksum = 12841, ....................
+Sender received confirmation: seqnum = -1, acknum = 10, checksum = 12841, ....................
+sliding window [ 11 12 * * ]
+timeout
+resending11.
+Sender's timer has expired, resend the message: seqnum = 11, acknum = -1, checksum = 1275, LLLLLLLLLLLLLLLLLLLL
+Receiver received correctly: seqnum = 11, acknum = -1, checksum = 1275, LLLLLLLLLLLLLLLLLLLL
+******模拟网络环境******：向上递交给应用层数据：LLLLLLLLLLLLLLLLLLLL
+Receiver sent confirmation message: seqnum = -1, acknum = 11, checksum = 12840, ....................
+Sender received confirmation: seqnum = -1, acknum = 11, checksum = 12840, ....................
+sliding window [ 12 * * * ]
+timeout
+resending12.
+Sender's timer has expired, resend the message: seqnum = 12, acknum = -1, checksum = 64239, MMMMMMMMMMMMMMMMMMMM
+Receiver received correctly: seqnum = 12, acknum = -1, checksum = 64239, MMMMMMMMMMMMMMMMMMMM
+******模拟网络环境******：向上递交给应用层数据：MMMMMMMMMMMMMMMMMMMM
+Receiver sent confirmation message: seqnum = -1, acknum = 12, checksum = 12839, ....................
+Sender received confirmation: seqnum = -1, acknum = 12, checksum = 12839, ....................
+sliding window [ * * * * ]
+Done. Close Timer.
+Sender sends message: seqnum = 13, acknum = -1, checksum = 61668, NNNNNNNNNNNNNNNNNNNN
+Sender Start Timer
+expectSequenceNumberSend is 14
+Sender sends message: seqnum = 14, acknum = -1, checksum = 59097, OOOOOOOOOOOOOOOOOOOO
+expectSequenceNumberSend is 15
+Sender sends message: seqnum = 15, acknum = -1, checksum = 56526, PPPPPPPPPPPPPPPPPPPP
+expectSequenceNumberSend is 16
+Sender sends message: seqnum = 16, acknum = -1, checksum = 53955, QQQQQQQQQQQQQQQQQQQQ
+expectSequenceNumberSend is 17
+Receiver received correctly: seqnum = 13, acknum = -1, checksum = 61668, NNNNNNNNNNNNNNNNNNNN
+******模拟网络环境******：向上递交给应用层数据：NNNNNNNNNNNNNNNNNNNN
+Receiver sent confirmation message: seqnum = -1, acknum = 13, checksum = 12838, ....................
+Sender received confirmation: seqnum = -1, acknum = 13, checksum = 12838, ....................
+sliding window [ 14 15 16 * ]
+Receiver received correctly: seqnum = 14, acknum = -1, checksum = 59097, OOOOOOOOOOOOOOOOOOOO
+******模拟网络环境******：向上递交给应用层数据：OOOOOOOOOOOOOOOOOOOO
+Receiver sent confirmation message: seqnum = -1, acknum = 14, checksum = 12837, ....................
+Receiver received correctly: seqnum = 15, acknum = -1, checksum = 56526, PPPPPPPPPPPPPPPPPPPP
+******模拟网络环境******：向上递交给应用层数据：PPPPPPPPPPPPPPPPPPPP
+Receiver sent confirmation message: seqnum = -1, acknum = 15, checksum = 12836, ....................
+Sender received confirmation: seqnum = -1, acknum = 14, checksum = 12837, ....................
+sliding window [ 15 16 * * ]
+Receiver received correctly: seqnum = 16, acknum = -1, checksum = 53955, QQQQQQQQQQQQQQQQQQQQ
+******模拟网络环境******：向上递交给应用层数据：QQQQQQQQQQQQQQQQQQQQ
+Receiver sent confirmation message: seqnum = -1, acknum = 16, checksum = 12835, ....................
+Sender received confirmation: seqnum = -1, acknum = 15, checksum = 12836, ....................
+sliding window [ 16 * * * ]
+Sender received confirmation: seqnum = -1, acknum = 16, checksum = 12835, ....................
+sliding window [ * * * * ]
+Done. Close Timer.
+Sender sends message: seqnum = 17, acknum = -1, checksum = 51384, RRRRRRRRRRRRRRRRRRRR
+Sender Start Timer
+expectSequenceNumberSend is 18
+Sender sends message: seqnum = 18, acknum = -1, checksum = 48813, SSSSSSSSSSSSSSSSSSSS
+expectSequenceNumberSend is 19
+Sender sends message: seqnum = 19, acknum = -1, checksum = 46242, TTTTTTTTTTTTTTTTTTTT
+expectSequenceNumberSend is 20
+Sender sends message: seqnum = 20, acknum = -1, checksum = 43671, UUUUUUUUUUUUUUUUUUUU
+expectSequenceNumberSend is 21
+Receiver received correctly: seqnum = 17, acknum = -1, checksum = 51384, RRRRRRRRRRRRRRRRRRRR
+******模拟网络环境******：向上递交给应用层数据：RRRRRRRRRRRRRRRRRRRR
+Receiver sent confirmation message: seqnum = -1, acknum = 17, checksum = 12834, ....................
+Sender received confirmation: seqnum = -1, acknum = 17, checksum = 12834, ....................
+sliding window [ 18 19 20 * ]
+Receiver received correctly: seqnum = 18, acknum = -1, checksum = 48813, SSSSSSSSSSSSSSSSSSSS
+******模拟网络环境******：向上递交给应用层数据：SSSSSSSSSSSSSSSSSSSS
+Receiver sent confirmation message: seqnum = -1, acknum = 18, checksum = 12833, ....................
+Sender received confirmation: seqnum = -1, acknum = 18, checksum = 12833, ....................
+sliding window [ 19 20 * * ]
+Receiver data verification error: seqnum = 19, acknum = -1, checksum = 46242, UTTTTTTTTTTTTTTTTTTT
+Receiver resending confirmation message: seqnum = -1, acknum = 18, checksum = 12833, ....................
+wrong ACK, keep waiting
+timeout
+resending19.
+Sender's timer has expired, resend the message: seqnum = 19, acknum = -1, checksum = 46242, TTTTTTTTTTTTTTTTTTTT
+Receiver received correctly: seqnum = 19, acknum = -1, checksum = 46242, TTTTTTTTTTTTTTTTTTTT
+******模拟网络环境******：向上递交给应用层数据：TTTTTTTTTTTTTTTTTTTT
+Receiver sent confirmation message: seqnum = -1, acknum = 19, checksum = 12832, ....................
+Sender received confirmation: seqnum = -1, acknum = 19, checksum = 12832, ....................
+sliding window [ 20 * * * ]
+timeout
+resending20.
+Sender's timer has expired, resend the message: seqnum = 20, acknum = -1, checksum = 43671, UUUUUUUUUUUUUUUUUUUU
+Receiver received correctly: seqnum = 20, acknum = -1, checksum = 43671, UUUUUUUUUUUUUUUUUUUU
+******模拟网络环境******：向上递交给应用层数据：UUUUUUUUUUUUUUUUUUUU
+Receiver sent confirmation message: seqnum = -1, acknum = 20, checksum = 12831, ....................
+Sender received confirmation: seqnum = -1, acknum = 20, checksum = 12831, ....................
+sliding window [ * * * * ]
+Done. Close Timer.
+Sender sends message: seqnum = 21, acknum = -1, checksum = 41100, VVVVVVVVVVVVVVVVVVVV
+Sender Start Timer
+expectSequenceNumberSend is 22
+Sender sends message: seqnum = 22, acknum = -1, checksum = 38529, WWWWWWWWWWWWWWWWWWWW
+expectSequenceNumberSend is 23
+Sender sends message: seqnum = 23, acknum = -1, checksum = 35958, XXXXXXXXXXXXXXXXXXXX
+expectSequenceNumberSend is 24
+Sender sends message: seqnum = 24, acknum = -1, checksum = 33387, YYYYYYYYYYYYYYYYYYYY
+expectSequenceNumberSend is 25
+Receiver received an incorrect message sequence number: seqnum = 22, acknum = -1, checksum = 38529, WWWWWWWWWWWWWWWWWWWW
+expecting21
+Receiver resending confirmation message: seqnum = -1, acknum = 20, checksum = 12831, ....................
+Receiver received an incorrect message sequence number: seqnum = 23, acknum = -1, checksum = 35958, XXXXXXXXXXXXXXXXXXXX
+expecting21
+Receiver resending confirmation message: seqnum = -1, acknum = 20, checksum = 12831, ....................
+Receiver received an incorrect message sequence number: seqnum = 24, acknum = -1, checksum = 33387, YYYYYYYYYYYYYYYYYYYY
+expecting21
+Receiver resending confirmation message: seqnum = -1, acknum = 20, checksum = 12831, ....................
+wrong ACK, keep waiting
+wrong ACK, keep waiting
+timeout
+resending21.
+Sender's timer has expired, resend the message: seqnum = 21, acknum = -1, checksum = 41100, VVVVVVVVVVVVVVVVVVVV
+Receiver data verification error: seqnum = 21, acknum = -1, checksum = 41100, WVVVVVVVVVVVVVVVVVVV
+Receiver resending confirmation message: seqnum = -1, acknum = 20, checksum = 12831, ....................
+wrong ACK, keep waiting
+timeout
+resending21.
+Sender's timer has expired, resend the message: seqnum = 21, acknum = -1, checksum = 41100, VVVVVVVVVVVVVVVVVVVV
+Receiver received correctly: seqnum = 21, acknum = -1, checksum = 41100, VVVVVVVVVVVVVVVVVVVV
+******模拟网络环境******：向上递交给应用层数据：VVVVVVVVVVVVVVVVVVVV
+Receiver sent confirmation message: seqnum = -1, acknum = 21, checksum = 12830, ....................
+Sender received confirmation: seqnum = -1, acknum = 21, checksum = 12830, ....................
+sliding window [ 22 23 24 * ]
+timeout
+resending22.
+Sender's timer has expired, resend the message: seqnum = 22, acknum = -1, checksum = 38529, WWWWWWWWWWWWWWWWWWWW
+Receiver received correctly: seqnum = 22, acknum = -1, checksum = 38529, WWWWWWWWWWWWWWWWWWWW
+******模拟网络环境******：向上递交给应用层数据：WWWWWWWWWWWWWWWWWWWW
+Receiver sent confirmation message: seqnum = -1, acknum = 22, checksum = 12829, ....................
+Sender received confirmation: seqnum = -1, acknum = 22, checksum = 12829, ....................
+sliding window [ 23 24 * * ]
+timeout
+resending23.
+Sender's timer has expired, resend the message: seqnum = 23, acknum = -1, checksum = 35958, XXXXXXXXXXXXXXXXXXXX
+Receiver data verification error: seqnum = 23, acknum = -1, checksum = 35958, YXXXXXXXXXXXXXXXXXXX
+Receiver resending confirmation message: seqnum = -1, acknum = 22, checksum = 12829, ....................
+timeout
+resending23.
+Sender's timer has expired, resend the message: seqnum = 23, acknum = -1, checksum = 35958, XXXXXXXXXXXXXXXXXXXX
+Receiver received correctly: seqnum = 23, acknum = -1, checksum = 35958, XXXXXXXXXXXXXXXXXXXX
+******模拟网络环境******：向上递交给应用层数据：XXXXXXXXXXXXXXXXXXXX
+Receiver sent confirmation message: seqnum = -1, acknum = 23, checksum = 12828, ....................
+timeout
+resending23.
+Sender's timer has expired, resend the message: seqnum = 23, acknum = -1, checksum = 35958, XXXXXXXXXXXXXXXXXXXX
+Receiver received an incorrect message sequence number: seqnum = 23, acknum = -1, checksum = 35958, XXXXXXXXXXXXXXXXXXXX
+expecting24
+Receiver resending confirmation message: seqnum = -1, acknum = 23, checksum = 12828, ....................
+timeout
+resending23.
+Sender's timer has expired, resend the message: seqnum = 23, acknum = -1, checksum = 35958, XXXXXXXXXXXXXXXXXXXX
+Receiver received an incorrect message sequence number: seqnum = 23, acknum = -1, checksum = 35958, XXXXXXXXXXXXXXXXXXXX
+expecting24
+Receiver resending confirmation message: seqnum = -1, acknum = 23, checksum = 12828, ....................
+Sender received confirmation: seqnum = -1, acknum = 23, checksum = 12828, ....................
+sliding window [ 24 * * * ]
+timeout
+resending24.
+Sender's timer has expired, resend the message: seqnum = 24, acknum = -1, checksum = 33387, YYYYYYYYYYYYYYYYYYYY
+Receiver received correctly: seqnum = 24, acknum = -1, checksum = 33387, YYYYYYYYYYYYYYYYYYYY
+******模拟网络环境******：向上递交给应用层数据：YYYYYYYYYYYYYYYYYYYY
+Receiver sent confirmation message: seqnum = -1, acknum = 24, checksum = 12827, ....................
+Sender: ACK broken
+timeout
+resending24.
+Sender's timer has expired, resend the message: seqnum = 24, acknum = -1, checksum = 33387, YYYYYYYYYYYYYYYYYYYY
+Receiver received an incorrect message sequence number: seqnum = 24, acknum = -1, checksum = 33387, YYYYYYYYYYYYYYYYYYYY
+expecting25
+Receiver resending confirmation message: seqnum = -1, acknum = 24, checksum = 12827, ....................
+Sender received confirmation: seqnum = -1, acknum = 24, checksum = 12827, ....................
+sliding window [ * * * * ]
+Done. Close Timer.
+Sender sends message: seqnum = 25, acknum = -1, checksum = 30816, ZZZZZZZZZZZZZZZZZZZZ
+Sender Start Timer
+expectSequenceNumberSend is 26
+Sender sends message: seqnum = 26, acknum = -1, checksum = 29530, AAAAAAAAAAAAAAAAAAAA
+expectSequenceNumberSend is 27
+Sender sends message: seqnum = 27, acknum = -1, checksum = 26959, BBBBBBBBBBBBBBBBBBBB
+expectSequenceNumberSend is 28
+Sender sends message: seqnum = 28, acknum = -1, checksum = 24388, CCCCCCCCCCCCCCCCCCCC
+expectSequenceNumberSend is 29
+Receiver received correctly: seqnum = 25, acknum = -1, checksum = 30816, ZZZZZZZZZZZZZZZZZZZZ
+******模拟网络环境******：向上递交给应用层数据：ZZZZZZZZZZZZZZZZZZZZ
+Receiver sent confirmation message: seqnum = -1, acknum = 25, checksum = 12826, ....................
+Sender received confirmation: seqnum = -1, acknum = 25, checksum = 12826, ....................
+sliding window [ 26 27 28 * ]
+Receiver received an incorrect message sequence number: seqnum = 27, acknum = -1, checksum = 26959, BBBBBBBBBBBBBBBBBBBB
+expecting26
+Receiver resending confirmation message: seqnum = -1, acknum = 25, checksum = 12826, ....................
+wrong ACK, keep waiting
+Receiver data verification error: seqnum = 28, acknum = -1, checksum = 24388, DCCCCCCCCCCCCCCCCCCC
+Receiver resending confirmation message: seqnum = -1, acknum = 25, checksum = 12826, ....................
+wrong ACK, keep waiting
+timeout
+resending26.
+Sender's timer has expired, resend the message: seqnum = 26, acknum = -1, checksum = 29530, AAAAAAAAAAAAAAAAAAAA
+timeout
+resending26.
+Sender's timer has expired, resend the message: seqnum = 26, acknum = -1, checksum = 29530, AAAAAAAAAAAAAAAAAAAA
+Receiver received correctly: seqnum = 26, acknum = -1, checksum = 29530, AAAAAAAAAAAAAAAAAAAA
+******模拟网络环境******：向上递交给应用层数据：AAAAAAAAAAAAAAAAAAAA
+Receiver sent confirmation message: seqnum = -1, acknum = 26, checksum = 12825, ....................
+Sender received confirmation: seqnum = -1, acknum = 26, checksum = 12825, ....................
+sliding window [ 27 28 * * ]
+timeout
+resending27.
+Sender's timer has expired, resend the message: seqnum = 27, acknum = -1, checksum = 26959, BBBBBBBBBBBBBBBBBBBB
+timeout
+resending27.
+Sender's timer has expired, resend the message: seqnum = 27, acknum = -1, checksum = 26959, BBBBBBBBBBBBBBBBBBBB
+timeout
+resending27.
+Sender's timer has expired, resend the message: seqnum = 27, acknum = -1, checksum = 26959, BBBBBBBBBBBBBBBBBBBB
+Receiver received correctly: seqnum = 27, acknum = -1, checksum = 26959, BBBBBBBBBBBBBBBBBBBB
+******模拟网络环境******：向上递交给应用层数据：BBBBBBBBBBBBBBBBBBBB
+Receiver sent confirmation message: seqnum = -1, acknum = 27, checksum = 12824, ....................
+Sender received confirmation: seqnum = -1, acknum = 27, checksum = 12824, ....................
+sliding window [ 28 * * * ]
+timeout
+resending28.
+Sender's timer has expired, resend the message: seqnum = 28, acknum = -1, checksum = 24388, CCCCCCCCCCCCCCCCCCCC
+Receiver received correctly: seqnum = 28, acknum = -1, checksum = 24388, CCCCCCCCCCCCCCCCCCCC
+******模拟网络环境******：向上递交给应用层数据：CCCCCCCCCCCCCCCCCCCC
+Receiver sent confirmation message: seqnum = -1, acknum = 28, checksum = 12823, ....................
+Sender received confirmation: seqnum = -1, acknum = 28, checksum = 12823, ....................
+sliding window [ * * * * ]
+Done. Close Timer.
+Sender sends message: seqnum = 29, acknum = -1, checksum = 21817, DDDDDDDDDDDDDDDDDDDD
+Sender Start Timer
+expectSequenceNumberSend is 30
+Sender sends message: seqnum = 30, acknum = -1, checksum = 19246, EEEEEEEEEEEEEEEEEEEE
+expectSequenceNumberSend is 31
+Sender sends message: seqnum = 31, acknum = -1, checksum = 16675, FFFFFFFFFFFFFFFFFFFF
+expectSequenceNumberSend is 32
+Sender sends message: seqnum = 32, acknum = -1, checksum = 14104, GGGGGGGGGGGGGGGGGGGG
+expectSequenceNumberSend is 33
+Receiver received correctly: seqnum = 29, acknum = -1, checksum = 21817, DDDDDDDDDDDDDDDDDDDD
+******模拟网络环境******：向上递交给应用层数据：DDDDDDDDDDDDDDDDDDDD
+Receiver sent confirmation message: seqnum = -1, acknum = 29, checksum = 12822, ....................
+Sender received confirmation: seqnum = -1, acknum = 29, checksum = 12822, ....................
+sliding window [ 30 31 32 * ]
+Receiver received correctly: seqnum = 30, acknum = -1, checksum = 19246, EEEEEEEEEEEEEEEEEEEE
+******模拟网络环境******：向上递交给应用层数据：EEEEEEEEEEEEEEEEEEEE
+Receiver sent confirmation message: seqnum = -1, acknum = 30, checksum = 12821, ....................
+Receiver received correctly: seqnum = 31, acknum = -1, checksum = 16675, FFFFFFFFFFFFFFFFFFFF
+******模拟网络环境******：向上递交给应用层数据：FFFFFFFFFFFFFFFFFFFF
+Receiver sent confirmation message: seqnum = -1, acknum = 31, checksum = 12820, ....................
+Sender received confirmation: seqnum = -1, acknum = 30, checksum = 12821, ....................
+sliding window [ 31 32 * * ]
+Sender received confirmation: seqnum = -1, acknum = 31, checksum = 12820, ....................
+sliding window [ 32 * * * ]
+timeout
+resending32.
+Sender's timer has expired, resend the message: seqnum = 32, acknum = -1, checksum = 14104, GGGGGGGGGGGGGGGGGGGG
+Receiver received correctly: seqnum = 32, acknum = -1, checksum = 14104, GGGGGGGGGGGGGGGGGGGG
+******模拟网络环境******：向上递交给应用层数据：GGGGGGGGGGGGGGGGGGGG
+Receiver sent confirmation message: seqnum = -1, acknum = 32, checksum = 12819, ....................
+Sender received confirmation: seqnum = -1, acknum = 32, checksum = 12819, ....................
+sliding window [ * * * * ]
+Done. Close Timer.
+Sender sends message: seqnum = 33, acknum = -1, checksum = 11533, HHHHHHHHHHHHHHHHHHHH
+Sender Start Timer
+expectSequenceNumberSend is 34
+Sender sends message: seqnum = 34, acknum = -1, checksum = 8962, IIIIIIIIIIIIIIIIIIII
+expectSequenceNumberSend is 35
+Sender sends message: seqnum = 35, acknum = -1, checksum = 6391, JJJJJJJJJJJJJJJJJJJJ
+expectSequenceNumberSend is 36
+Sender sends message: seqnum = 36, acknum = -1, checksum = 3820, KKKKKKKKKKKKKKKKKKKK
+expectSequenceNumberSend is 37
+Receiver data verification error: seqnum = 33, acknum = -1, checksum = 11533, IHHHHHHHHHHHHHHHHHHH
+Receiver resending confirmation message: seqnum = -1, acknum = 32, checksum = 12819, ....................
+wrong ACK, keep waiting
+Receiver data verification error: seqnum = 34, acknum = -1, checksum = 8962, JIIIIIIIIIIIIIIIIIII
+Receiver resending confirmation message: seqnum = -1, acknum = 32, checksum = 12819, ....................
+wrong ACK, keep waiting
+Receiver received an incorrect message sequence number: seqnum = 35, acknum = -1, checksum = 6391, JJJJJJJJJJJJJJJJJJJJ
+expecting33
+Receiver resending confirmation message: seqnum = -1, acknum = 32, checksum = 12819, ....................
+wrong ACK, keep waiting
+Receiver received an incorrect message sequence number: seqnum = 36, acknum = -1, checksum = 3820, KKKKKKKKKKKKKKKKKKKK
+expecting33
+Receiver resending confirmation message: seqnum = -1, acknum = 32, checksum = 12819, ....................
+Received 3 redundant ACKs, quickly retransmitting sequence numbers 快速33
+wrong ACK, keep waiting
+Receiver received correctly: seqnum = 33, acknum = -1, checksum = 11533, HHHHHHHHHHHHHHHHHHHH
+******模拟网络环境******：向上递交给应用层数据：HHHHHHHHHHHHHHHHHHHH
+Receiver sent confirmation message: seqnum = -1, acknum = 33, checksum = 12818, ....................
+Sender received confirmation: seqnum = -1, acknum = 33, checksum = 12818, ....................
+sliding window [ 34 35 36 * ]
+timeout
+resending34.
+Sender's timer has expired, resend the message: seqnum = 34, acknum = -1, checksum = 8962, IIIIIIIIIIIIIIIIIIII
+Receiver received correctly: seqnum = 34, acknum = -1, checksum = 8962, IIIIIIIIIIIIIIIIIIII
+******模拟网络环境******：向上递交给应用层数据：IIIIIIIIIIIIIIIIIIII
+Receiver sent confirmation message: seqnum = -1, acknum = 34, checksum = 12817, ....................
+Sender received confirmation: seqnum = -1, acknum = 34, checksum = 12817, ....................
+sliding window [ 35 36 * * ]
+timeout
+resending35.
+Sender's timer has expired, resend the message: seqnum = 35, acknum = -1, checksum = 6391, JJJJJJJJJJJJJJJJJJJJ
+Receiver received correctly: seqnum = 35, acknum = -1, checksum = 6391, JJJJJJJJJJJJJJJJJJJJ
+******模拟网络环境******：向上递交给应用层数据：JJJJJJJJJJJJJJJJJJJJ
+Receiver sent confirmation message: seqnum = -1, acknum = 35, checksum = 12816, ....................
+Sender: ACK broken
+timeout
+resending35.
+Sender's timer has expired, resend the message: seqnum = 35, acknum = -1, checksum = 6391, JJJJJJJJJJJJJJJJJJJJ
+timeout
+resending35.
+Sender's timer has expired, resend the message: seqnum = 35, acknum = -1, checksum = 6391, JJJJJJJJJJJJJJJJJJJJ
+Receiver received an incorrect message sequence number: seqnum = 35, acknum = -1, checksum = 6391, JJJJJJJJJJJJJJJJJJJJ
+expecting36
+Receiver resending confirmation message: seqnum = -1, acknum = 35, checksum = 12816, ....................
+Sender: ACK broken
+timeout
+resending35.
+Sender's timer has expired, resend the message: seqnum = 35, acknum = -1, checksum = 6391, JJJJJJJJJJJJJJJJJJJJ
+Receiver received an incorrect message sequence number: seqnum = 35, acknum = -1, checksum = 6391, JJJJJJJJJJJJJJJJJJJJ
+expecting36
+Receiver resending confirmation message: seqnum = -1, acknum = 35, checksum = 12816, ....................
+Sender received confirmation: seqnum = -1, acknum = 35, checksum = 12816, ....................
+sliding window [ 36 * * * ]
+timeout
+resending36.
+Sender's timer has expired, resend the message: seqnum = 36, acknum = -1, checksum = 3820, KKKKKKKKKKKKKKKKKKKK
+Receiver received correctly: seqnum = 36, acknum = -1, checksum = 3820, KKKKKKKKKKKKKKKKKKKK
+******模拟网络环境******：向上递交给应用层数据：KKKKKKKKKKKKKKKKKKKK
+Receiver sent confirmation message: seqnum = -1, acknum = 36, checksum = 12815, ....................
+Sender received confirmation: seqnum = -1, acknum = 36, checksum = 12815, ....................
+sliding window [ * * * * ]
+Done. Close Timer.
+Sender sends message: seqnum = 37, acknum = -1, checksum = 1249, LLLLLLLLLLLLLLLLLLLL
+Sender Start Timer
+expectSequenceNumberSend is 38
+Sender sends message: seqnum = 38, acknum = -1, checksum = 64213, MMMMMMMMMMMMMMMMMMMM
+expectSequenceNumberSend is 39
+Sender sends message: seqnum = 39, acknum = -1, checksum = 61642, NNNNNNNNNNNNNNNNNNNN
+expectSequenceNumberSend is 40
+Sender sends message: seqnum = 40, acknum = -1, checksum = 59071, OOOOOOOOOOOOOOOOOOOO
+expectSequenceNumberSend is 41
+Receiver received correctly: seqnum = 37, acknum = -1, checksum = 1249, LLLLLLLLLLLLLLLLLLLL
+******模拟网络环境******：向上递交给应用层数据：LLLLLLLLLLLLLLLLLLLL
+Receiver sent confirmation message: seqnum = -1, acknum = 37, checksum = 12814, ....................
+Receiver received correctly: seqnum = 38, acknum = -1, checksum = 64213, MMMMMMMMMMMMMMMMMMMM
+******模拟网络环境******：向上递交给应用层数据：MMMMMMMMMMMMMMMMMMMM
+Receiver sent confirmation message: seqnum = -1, acknum = 38, checksum = 12813, ....................
+Sender: ACK broken
+Receiver received correctly: seqnum = 39, acknum = -1, checksum = 61642, NNNNNNNNNNNNNNNNNNNN
+******模拟网络环境******：向上递交给应用层数据：NNNNNNNNNNNNNNNNNNNN
+Receiver sent confirmation message: seqnum = -1, acknum = 39, checksum = 12812, ....................
+Receiver received correctly: seqnum = 40, acknum = -1, checksum = 59071, OOOOOOOOOOOOOOOOOOOO
+******模拟网络环境******：向上递交给应用层数据：OOOOOOOOOOOOOOOOOOOO
+Receiver sent confirmation message: seqnum = -1, acknum = 40, checksum = 12811, ....................
+Sender received confirmation: seqnum = -1, acknum = 38, checksum = 12813, ....................
+sliding window [ 39 40 * * ]
+Sender received confirmation: seqnum = -1, acknum = 39, checksum = 12812, ....................
+sliding window [ 40 * * * ]
+Sender received confirmation: seqnum = -1, acknum = 40, checksum = 12811, ....................
+sliding window [ * * * * ]
+Done. Close Timer.
+Sender sends message: seqnum = 41, acknum = -1, checksum = 56500, PPPPPPPPPPPPPPPPPPPP
+Sender Start Timer
+expectSequenceNumberSend is 42
+Sender sends message: seqnum = 42, acknum = -1, checksum = 53929, QQQQQQQQQQQQQQQQQQQQ
+expectSequenceNumberSend is 43
+Sender sends message: seqnum = 43, acknum = -1, checksum = 51358, RRRRRRRRRRRRRRRRRRRR
+expectSequenceNumberSend is 44
+Sender sends message: seqnum = 44, acknum = -1, checksum = 48787, SSSSSSSSSSSSSSSSSSSS
+expectSequenceNumberSend is 45
+Receiver received correctly: seqnum = 41, acknum = -1, checksum = 56500, PPPPPPPPPPPPPPPPPPPP
+******模拟网络环境******：向上递交给应用层数据：PPPPPPPPPPPPPPPPPPPP
+Receiver sent confirmation message: seqnum = -1, acknum = 41, checksum = 12810, ....................
+Sender: ACK broken
+Receiver received correctly: seqnum = 42, acknum = -1, checksum = 53929, QQQQQQQQQQQQQQQQQQQQ
+******模拟网络环境******：向上递交给应用层数据：QQQQQQQQQQQQQQQQQQQQ
+Receiver sent confirmation message: seqnum = -1, acknum = 42, checksum = 12809, ....................
+Receiver received correctly: seqnum = 43, acknum = -1, checksum = 51358, RRRRRRRRRRRRRRRRRRRR
+******模拟网络环境******：向上递交给应用层数据：RRRRRRRRRRRRRRRRRRRR
+Receiver sent confirmation message: seqnum = -1, acknum = 43, checksum = 12808, ....................
+Sender received confirmation: seqnum = -1, acknum = 42, checksum = 12809, ....................
+sliding window [ 43 44 * * ]
+Receiver received correctly: seqnum = 44, acknum = -1, checksum = 48787, SSSSSSSSSSSSSSSSSSSS
+******模拟网络环境******：向上递交给应用层数据：SSSSSSSSSSSSSSSSSSSS
+Receiver sent confirmation message: seqnum = -1, acknum = 44, checksum = 12807, ....................
+Sender received confirmation: seqnum = -1, acknum = 43, checksum = 12808, ....................
+sliding window [ 44 * * * ]
+Sender received confirmation: seqnum = -1, acknum = 44, checksum = 12807, ....................
+sliding window [ * * * * ]
+Done. Close Timer.
+Sender sends message: seqnum = 45, acknum = -1, checksum = 46216, TTTTTTTTTTTTTTTTTTTT
+Sender Start Timer
+expectSequenceNumberSend is 46
+Sender sends message: seqnum = 46, acknum = -1, checksum = 43645, UUUUUUUUUUUUUUUUUUUU
+expectSequenceNumberSend is 47
+Sender sends message: seqnum = 47, acknum = -1, checksum = 41074, VVVVVVVVVVVVVVVVVVVV
+expectSequenceNumberSend is 48
+Receiver received correctly: seqnum = 45, acknum = -1, checksum = 46216, TTTTTTTTTTTTTTTTTTTT
+******模拟网络环境******：向上递交给应用层数据：TTTTTTTTTTTTTTTTTTTT
+Receiver sent confirmation message: seqnum = -1, acknum = 45, checksum = 12806, ....................
+Sender sends message: seqnum = 48, acknum = -1, checksum = 38503, WWWWWWWWWWWWWWWWWWWW
+expectSequenceNumberSend is 49
+Receiver received correctly: seqnum = 46, acknum = -1, checksum = 43645, UUUUUUUUUUUUUUUUUUUU
+******模拟网络环境******：向上递交给应用层数据：UUUUUUUUUUUUUUUUUUUU
+Receiver sent confirmation message: seqnum = -1, acknum = 46, checksum = 12805, ....................
+Sender received confirmation: seqnum = -1, acknum = 45, checksum = 12806, ....................
+sliding window [ 46 47 48 * ]
+Sender received confirmation: seqnum = -1, acknum = 46, checksum = 12805, ....................
+sliding window [ 47 48 * * ]
+Receiver received correctly: seqnum = 47, acknum = -1, checksum = 41074, VVVVVVVVVVVVVVVVVVVV
+******模拟网络环境******：向上递交给应用层数据：VVVVVVVVVVVVVVVVVVVV
+Receiver sent confirmation message: seqnum = -1, acknum = 47, checksum = 12804, ....................
+Receiver received correctly: seqnum = 48, acknum = -1, checksum = 38503, WWWWWWWWWWWWWWWWWWWW
+******模拟网络环境******：向上递交给应用层数据：WWWWWWWWWWWWWWWWWWWW
+Receiver sent confirmation message: seqnum = -1, acknum = 48, checksum = 12803, ....................
+Sender received confirmation: seqnum = -1, acknum = 47, checksum = 12804, ....................
+sliding window [ 48 * * * ]
+Sender received confirmation: seqnum = -1, acknum = 48, checksum = 12803, ....................
+sliding window [ * * * * ]
+Done. Close Timer.
+Sender sends message: seqnum = 49, acknum = -1, checksum = 35932, XXXXXXXXXXXXXXXXXXXX
+Sender Start Timer
+expectSequenceNumberSend is 50
+Sender sends message: seqnum = 50, acknum = -1, checksum = 33361, YYYYYYYYYYYYYYYYYYYY
+expectSequenceNumberSend is 51
+Sender sends message: seqnum = 51, acknum = -1, checksum = 30790, ZZZZZZZZZZZZZZZZZZZZ
+expectSequenceNumberSend is 52
+Sender sends message: seqnum = 52, acknum = -1, checksum = 29504, AAAAAAAAAAAAAAAAAAAA
+expectSequenceNumberSend is 53
+Receiver received an incorrect message sequence number: seqnum = 50, acknum = -1, checksum = 33361, YYYYYYYYYYYYYYYYYYYY
+expecting49
+Receiver resending confirmation message: seqnum = -1, acknum = 48, checksum = 12803, ....................
+wrong ACK, keep waiting
+Receiver received an incorrect message sequence number: seqnum = 51, acknum = -1, checksum = 30790, ZZZZZZZZZZZZZZZZZZZZ
+expecting49
+Receiver resending confirmation message: seqnum = -1, acknum = 48, checksum = 12803, ....................
+Sender: ACK broken
+Receiver received an incorrect message sequence number: seqnum = 52, acknum = -1, checksum = 29504, AAAAAAAAAAAAAAAAAAAA
+expecting49
+Receiver resending confirmation message: seqnum = -1, acknum = 48, checksum = 12803, ....................
+wrong ACK, keep waiting
+timeout
+resending49.
+Sender's timer has expired, resend the message: seqnum = 49, acknum = -1, checksum = 35932, XXXXXXXXXXXXXXXXXXXX
+Receiver received correctly: seqnum = 49, acknum = -1, checksum = 35932, XXXXXXXXXXXXXXXXXXXX
+******模拟网络环境******：向上递交给应用层数据：XXXXXXXXXXXXXXXXXXXX
+Receiver sent confirmation message: seqnum = -1, acknum = 49, checksum = 12802, ....................
+Sender received confirmation: seqnum = -1, acknum = 49, checksum = 12802, ....................
+sliding window [ 50 51 52 * ]
+timeout
+resending50.
+Sender's timer has expired, resend the message: seqnum = 50, acknum = -1, checksum = 33361, YYYYYYYYYYYYYYYYYYYY
+Receiver received correctly: seqnum = 50, acknum = -1, checksum = 33361, YYYYYYYYYYYYYYYYYYYY
+******模拟网络环境******：向上递交给应用层数据：YYYYYYYYYYYYYYYYYYYY
+Receiver sent confirmation message: seqnum = -1, acknum = 50, checksum = 12801, ....................
+Sender received confirmation: seqnum = -1, acknum = 50, checksum = 12801, ....................
+sliding window [ 51 52 * * ]
+timeout
+resending51.
+Sender's timer has expired, resend the message: seqnum = 51, acknum = -1, checksum = 30790, ZZZZZZZZZZZZZZZZZZZZ
+Receiver received correctly: seqnum = 51, acknum = -1, checksum = 30790, ZZZZZZZZZZZZZZZZZZZZ
+******模拟网络环境******：向上递交给应用层数据：ZZZZZZZZZZZZZZZZZZZZ
+Receiver sent confirmation message: seqnum = -1, acknum = 51, checksum = 12800, ....................
+Sender received confirmation: seqnum = -1, acknum = 51, checksum = 12800, ....................
+sliding window [ 52 * * * ]
+timeout
+resending52.
+Sender's timer has expired, resend the message: seqnum = 52, acknum = -1, checksum = 29504, AAAAAAAAAAAAAAAAAAAA
+Receiver data verification error: seqnum = 52, acknum = -1, checksum = 29504, BAAAAAAAAAAAAAAAAAAA
+Receiver resending confirmation message: seqnum = -1, acknum = 51, checksum = 12800, ....................
+wrong ACK, keep waiting
+timeout
+resending52.
+Sender's timer has expired, resend the message: seqnum = 52, acknum = -1, checksum = 29504, AAAAAAAAAAAAAAAAAAAA
+Receiver received correctly: seqnum = 52, acknum = -1, checksum = 29504, AAAAAAAAAAAAAAAAAAAA
+******模拟网络环境******：向上递交给应用层数据：AAAAAAAAAAAAAAAAAAAA
+Receiver sent confirmation message: seqnum = -1, acknum = 52, checksum = 12799, ....................
+Sender: ACK broken
+timeout
+resending52.
+Sender's timer has expired, resend the message: seqnum = 52, acknum = -1, checksum = 29504, AAAAAAAAAAAAAAAAAAAA
+Receiver received an incorrect message sequence number: seqnum = 52, acknum = -1, checksum = 29504, AAAAAAAAAAAAAAAAAAAA
+expecting53
+Receiver resending confirmation message: seqnum = -1, acknum = 52, checksum = 12799, ....................
+Sender received confirmation: seqnum = -1, acknum = 52, checksum = 12799, ....................
+sliding window [ * * * * ]
+Done. Close Timer.
+Sender sends message: seqnum = 53, acknum = -1, checksum = 26933, BBBBBBBBBBBBBBBBBBBB
+Sender Start Timer
+expectSequenceNumberSend is 54
+Sender sends message: seqnum = 54, acknum = -1, checksum = 24362, CCCCCCCCCCCCCCCCCCCC
+expectSequenceNumberSend is 55
+Sender sends message: seqnum = 55, acknum = -1, checksum = 21791, DDDDDDDDDDDDDDDDDDDD
+expectSequenceNumberSend is 56
+Sender sends message: seqnum = 56, acknum = -1, checksum = 19220, EEEEEEEEEEEEEEEEEEEE
+expectSequenceNumberSend is 57
+Receiver received an incorrect message sequence number: seqnum = 55, acknum = -1, checksum = 21791, DDDDDDDDDDDDDDDDDDDD
+expecting53
+Receiver resending confirmation message: seqnum = -1, acknum = 52, checksum = 12799, ....................
+Receiver received an incorrect message sequence number: seqnum = 56, acknum = -1, checksum = 19220, EEEEEEEEEEEEEEEEEEEE
+expecting53
+Receiver resending confirmation message: seqnum = -1, acknum = 52, checksum = 12799, ....................
+timeout
+resending53.
+Sender's timer has expired, resend the message: seqnum = 53, acknum = -1, checksum = 26933, BBBBBBBBBBBBBBBBBBBB
+Receiver received correctly: seqnum = 53, acknum = -1, checksum = 26933, BBBBBBBBBBBBBBBBBBBB
+******模拟网络环境******：向上递交给应用层数据：BBBBBBBBBBBBBBBBBBBB
+Receiver sent confirmation message: seqnum = -1, acknum = 53, checksum = 12798, ....................
+Sender received confirmation: seqnum = -1, acknum = 53, checksum = 12798, ....................
+sliding window [ 54 55 56 * ]
+timeout
+resending54.
+Sender's timer has expired, resend the message: seqnum = 54, acknum = -1, checksum = 24362, CCCCCCCCCCCCCCCCCCCC
+Receiver received correctly: seqnum = 54, acknum = -1, checksum = 24362, CCCCCCCCCCCCCCCCCCCC
+******模拟网络环境******：向上递交给应用层数据：CCCCCCCCCCCCCCCCCCCC
+Receiver sent confirmation message: seqnum = -1, acknum = 54, checksum = 12797, ....................
+Sender received confirmation: seqnum = -1, acknum = 54, checksum = 12797, ....................
+sliding window [ 55 56 * * ]
+timeout
+resending55.
+Sender's timer has expired, resend the message: seqnum = 55, acknum = -1, checksum = 21791, DDDDDDDDDDDDDDDDDDDD
+Receiver received correctly: seqnum = 55, acknum = -1, checksum = 21791, DDDDDDDDDDDDDDDDDDDD
+******模拟网络环境******：向上递交给应用层数据：DDDDDDDDDDDDDDDDDDDD
+Receiver sent confirmation message: seqnum = -1, acknum = 55, checksum = 12796, ....................
+Sender: ACK broken
+timeout
+resending55.
+Sender's timer has expired, resend the message: seqnum = 55, acknum = -1, checksum = 21791, DDDDDDDDDDDDDDDDDDDD
+Receiver data verification error: seqnum = 55, acknum = -1, checksum = 21791, EDDDDDDDDDDDDDDDDDDD
+Receiver resending confirmation message: seqnum = -1, acknum = 55, checksum = 12796, ....................
+Sender received confirmation: seqnum = -1, acknum = 55, checksum = 12796, ....................
+sliding window [ 56 * * * ]
+timeout
+resending56.
+Sender's timer has expired, resend the message: seqnum = 56, acknum = -1, checksum = 19220, EEEEEEEEEEEEEEEEEEEE
+Receiver received correctly: seqnum = 56, acknum = -1, checksum = 19220, EEEEEEEEEEEEEEEEEEEE
+******模拟网络环境******：向上递交给应用层数据：EEEEEEEEEEEEEEEEEEEE
+Receiver sent confirmation message: seqnum = -1, acknum = 56, checksum = 12795, ....................
+Sender received confirmation: seqnum = -1, acknum = 56, checksum = 12795, ....................
+sliding window [ * * * * ]
+Done. Close Timer.
+Sender sends message: seqnum = 57, acknum = -1, checksum = 16649, FFFFFFFFFFFFFFFFFFFF
+Sender Start Timer
+expectSequenceNumberSend is 58
+Sender sends message: seqnum = 58, acknum = -1, checksum = 14078, GGGGGGGGGGGGGGGGGGGG
+expectSequenceNumberSend is 59
+Sender sends message: seqnum = 59, acknum = -1, checksum = 11507, HHHHHHHHHHHHHHHHHHHH
+expectSequenceNumberSend is 60
+Sender sends message: seqnum = 60, acknum = -1, checksum = 8936, IIIIIIIIIIIIIIIIIIII
+expectSequenceNumberSend is 61
+Receiver received correctly: seqnum = 57, acknum = -1, checksum = 16649, FFFFFFFFFFFFFFFFFFFF
+******模拟网络环境******：向上递交给应用层数据：FFFFFFFFFFFFFFFFFFFF
+Receiver sent confirmation message: seqnum = -1, acknum = 57, checksum = 12794, ....................
+Receiver received correctly: seqnum = 58, acknum = -1, checksum = 14078, GGGGGGGGGGGGGGGGGGGG
+******模拟网络环境******：向上递交给应用层数据：GGGGGGGGGGGGGGGGGGGG
+Receiver sent confirmation message: seqnum = -1, acknum = 58, checksum = 12793, ....................
+Receiver received correctly: seqnum = 59, acknum = -1, checksum = 11507, HHHHHHHHHHHHHHHHHHHH
+******模拟网络环境******：向上递交给应用层数据：HHHHHHHHHHHHHHHHHHHH
+Receiver sent confirmation message: seqnum = -1, acknum = 59, checksum = 12792, ....................
+Sender received confirmation: seqnum = -1, acknum = 58, checksum = 12793, ....................
+sliding window [ 59 60 * * ]
+Sender received confirmation: seqnum = -1, acknum = 59, checksum = 12792, ....................
+sliding window [ 60 * * * ]
+Receiver data verification error: seqnum = 60, acknum = -1, checksum = 8936, JIIIIIIIIIIIIIIIIIII
+Receiver resending confirmation message: seqnum = -1, acknum = 59, checksum = 12792, ....................
+Sender: ACK broken
+timeout
+resending60.
+Sender's timer has expired, resend the message: seqnum = 60, acknum = -1, checksum = 8936, IIIIIIIIIIIIIIIIIIII
+Receiver received correctly: seqnum = 60, acknum = -1, checksum = 8936, IIIIIIIIIIIIIIIIIIII
+******模拟网络环境******：向上递交给应用层数据：IIIIIIIIIIIIIIIIIIII
+Receiver sent confirmation message: seqnum = -1, acknum = 60, checksum = 12791, ....................
+Sender received confirmation: seqnum = -1, acknum = 60, checksum = 12791, ....................
+sliding window [ * * * * ]
+Done. Close Timer.
+Sender sends message: seqnum = 61, acknum = -1, checksum = 6365, JJJJJJJJJJJJJJJJJJJJ
+Sender Start Timer
+expectSequenceNumberSend is 62
+Sender sends message: seqnum = 62, acknum = -1, checksum = 3794, KKKKKKKKKKKKKKKKKKKK
+expectSequenceNumberSend is 63
+Sender sends message: seqnum = 63, acknum = -1, checksum = 1223, LLLLLLLLLLLLLLLLLLLL
+expectSequenceNumberSend is 64
+Sender sends message: seqnum = 64, acknum = -1, checksum = 64187, MMMMMMMMMMMMMMMMMMMM
+expectSequenceNumberSend is 65
+Receiver received correctly: seqnum = 61, acknum = -1, checksum = 6365, JJJJJJJJJJJJJJJJJJJJ
+******模拟网络环境******：向上递交给应用层数据：JJJJJJJJJJJJJJJJJJJJ
+Receiver sent confirmation message: seqnum = -1, acknum = 61, checksum = 12790, ....................
+Sender received confirmation: seqnum = -1, acknum = 61, checksum = 12790, ....................
+sliding window [ 62 63 64 * ]
+Receiver received correctly: seqnum = 62, acknum = -1, checksum = 3794, KKKKKKKKKKKKKKKKKKKK
+******模拟网络环境******：向上递交给应用层数据：KKKKKKKKKKKKKKKKKKKK
+Receiver sent confirmation message: seqnum = -1, acknum = 62, checksum = 12789, ....................
+Sender received confirmation: seqnum = -1, acknum = 62, checksum = 12789, ....................
+sliding window [ 63 64 * * ]
+Receiver received correctly: seqnum = 63, acknum = -1, checksum = 1223, LLLLLLLLLLLLLLLLLLLL
+******模拟网络环境******：向上递交给应用层数据：LLLLLLLLLLLLLLLLLLLL
+Receiver sent confirmation message: seqnum = -1, acknum = 63, checksum = 12788, ....................
+Receiver data verification error: seqnum = 64, acknum = -1, checksum = 64187, NMMMMMMMMMMMMMMMMMMM
+Receiver resending confirmation message: seqnum = -1, acknum = 63, checksum = 12788, ....................
+Sender received confirmation: seqnum = -1, acknum = 63, checksum = 12788, ....................
+sliding window [ 64 * * * ]
+timeout
+resending64.
+Sender's timer has expired, resend the message: seqnum = 64, acknum = -1, checksum = 64187, MMMMMMMMMMMMMMMMMMMM
+Receiver received correctly: seqnum = 64, acknum = -1, checksum = 64187, MMMMMMMMMMMMMMMMMMMM
+******模拟网络环境******：向上递交给应用层数据：MMMMMMMMMMMMMMMMMMMM
+Receiver sent confirmation message: seqnum = -1, acknum = 64, checksum = 12787, ....................
+Sender received confirmation: seqnum = -1, acknum = 64, checksum = 12787, ....................
+sliding window [ * * * * ]
+Done. Close Timer.
+Sender sends message: seqnum = 65, acknum = -1, checksum = 61616, NNNNNNNNNNNNNNNNNNNN
+Sender Start Timer
+expectSequenceNumberSend is 66
+Sender sends message: seqnum = 66, acknum = -1, checksum = 59045, OOOOOOOOOOOOOOOOOOOO
+expectSequenceNumberSend is 67
+Sender sends message: seqnum = 67, acknum = -1, checksum = 56474, PPPPPPPPPPPPPPPPPPPP
+expectSequenceNumberSend is 68
+Sender sends message: seqnum = 68, acknum = -1, checksum = 53903, QQQQQQQQQQQQQQQQQQQQ
+expectSequenceNumberSend is 69
+Receiver received correctly: seqnum = 65, acknum = -1, checksum = 61616, NNNNNNNNNNNNNNNNNNNN
+******模拟网络环境******：向上递交给应用层数据：NNNNNNNNNNNNNNNNNNNN
+Receiver sent confirmation message: seqnum = -1, acknum = 65, checksum = 12786, ....................
+Sender received confirmation: seqnum = -1, acknum = 65, checksum = 12786, ....................
+sliding window [ 66 67 68 * ]
+Receiver received correctly: seqnum = 66, acknum = -1, checksum = 59045, OOOOOOOOOOOOOOOOOOOO
+******模拟网络环境******：向上递交给应用层数据：OOOOOOOOOOOOOOOOOOOO
+Receiver sent confirmation message: seqnum = -1, acknum = 66, checksum = 12785, ....................
+Receiver received correctly: seqnum = 67, acknum = -1, checksum = 56474, PPPPPPPPPPPPPPPPPPPP
+******模拟网络环境******：向上递交给应用层数据：PPPPPPPPPPPPPPPPPPPP
+Receiver sent confirmation message: seqnum = -1, acknum = 67, checksum = 12784, ....................
+Receiver received correctly: seqnum = 68, acknum = -1, checksum = 53903, QQQQQQQQQQQQQQQQQQQQ
+******模拟网络环境******：向上递交给应用层数据：QQQQQQQQQQQQQQQQQQQQ
+Receiver sent confirmation message: seqnum = -1, acknum = 68, checksum = 12783, ....................
+Sender received confirmation: seqnum = -1, acknum = 68, checksum = 12783, ....................
+sliding window [ * * * * ]
+Done. Close Timer.
+Sender sends message: seqnum = 69, acknum = -1, checksum = 51332, RRRRRRRRRRRRRRRRRRRR
+Sender Start Timer
+expectSequenceNumberSend is 70
+Sender sends message: seqnum = 70, acknum = -1, checksum = 48761, SSSSSSSSSSSSSSSSSSSS
+expectSequenceNumberSend is 71
+Sender sends message: seqnum = 71, acknum = -1, checksum = 46190, TTTTTTTTTTTTTTTTTTTT
+expectSequenceNumberSend is 72
+Sender sends message: seqnum = 72, acknum = -1, checksum = 43619, UUUUUUUUUUUUUUUUUUUU
+expectSequenceNumberSend is 73
+Receiver received correctly: seqnum = 69, acknum = -1, checksum = 51332, RRRRRRRRRRRRRRRRRRRR
+******模拟网络环境******：向上递交给应用层数据：RRRRRRRRRRRRRRRRRRRR
+Receiver sent confirmation message: seqnum = -1, acknum = 69, checksum = 12782, ....................
+Receiver received correctly: seqnum = 70, acknum = -1, checksum = 48761, SSSSSSSSSSSSSSSSSSSS
+******模拟网络环境******：向上递交给应用层数据：SSSSSSSSSSSSSSSSSSSS
+Receiver sent confirmation message: seqnum = -1, acknum = 70, checksum = 12781, ....................
+Sender received confirmation: seqnum = -1, acknum = 69, checksum = 12782, ....................
+sliding window [ 70 71 72 * ]
+Sender: ACK broken
+Receiver data verification error: seqnum = 71, acknum = -1, checksum = 46190, UTTTTTTTTTTTTTTTTTTT
+Receiver resending confirmation message: seqnum = -1, acknum = 70, checksum = 12781, ....................
+Sender received confirmation: seqnum = -1, acknum = 70, checksum = 12781, ....................
+sliding window [ 71 72 * * ]
+Receiver received an incorrect message sequence number: seqnum = 72, acknum = -1, checksum = 43619, UUUUUUUUUUUUUUUUUUUU
+expecting71
+Receiver resending confirmation message: seqnum = -1, acknum = 70, checksum = 12781, ....................
+wrong ACK, keep waiting
+timeout
+resending71.
+Sender's timer has expired, resend the message: seqnum = 71, acknum = -1, checksum = 46190, TTTTTTTTTTTTTTTTTTTT
+Receiver received correctly: seqnum = 71, acknum = -1, checksum = 46190, TTTTTTTTTTTTTTTTTTTT
+******模拟网络环境******：向上递交给应用层数据：TTTTTTTTTTTTTTTTTTTT
+Receiver sent confirmation message: seqnum = -1, acknum = 71, checksum = 12780, ....................
+Sender received confirmation: seqnum = -1, acknum = 71, checksum = 12780, ....................
+sliding window [ 72 * * * ]
+timeout
+resending72.
+Sender's timer has expired, resend the message: seqnum = 72, acknum = -1, checksum = 43619, UUUUUUUUUUUUUUUUUUUU
+Receiver received correctly: seqnum = 72, acknum = -1, checksum = 43619, UUUUUUUUUUUUUUUUUUUU
+******模拟网络环境******：向上递交给应用层数据：UUUUUUUUUUUUUUUUUUUU
+Receiver sent confirmation message: seqnum = -1, acknum = 72, checksum = 12779, ....................
+Sender received confirmation: seqnum = -1, acknum = 72, checksum = 12779, ....................
+sliding window [ * * * * ]
+Done. Close Timer.
+Sender sends message: seqnum = 73, acknum = -1, checksum = 41048, VVVVVVVVVVVVVVVVVVVV
+Sender Start Timer
+expectSequenceNumberSend is 74
+Sender sends message: seqnum = 74, acknum = -1, checksum = 38477, WWWWWWWWWWWWWWWWWWWW
+expectSequenceNumberSend is 75
+Sender sends message: seqnum = 75, acknum = -1, checksum = 35906, XXXXXXXXXXXXXXXXXXXX
+expectSequenceNumberSend is 76
+Sender sends message: seqnum = 76, acknum = -1, checksum = 33335, YYYYYYYYYYYYYYYYYYYY
+expectSequenceNumberSend is 77
+Receiver received correctly: seqnum = 73, acknum = -1, checksum = 41048, VVVVVVVVVVVVVVVVVVVV
+******模拟网络环境******：向上递交给应用层数据：VVVVVVVVVVVVVVVVVVVV
+Receiver sent confirmation message: seqnum = -1, acknum = 73, checksum = 12778, ....................
+Sender received confirmation: seqnum = -1, acknum = 73, checksum = 12778, ....................
+sliding window [ 74 75 76 * ]
+Receiver received correctly: seqnum = 74, acknum = -1, checksum = 38477, WWWWWWWWWWWWWWWWWWWW
+******模拟网络环境******：向上递交给应用层数据：WWWWWWWWWWWWWWWWWWWW
+Receiver sent confirmation message: seqnum = -1, acknum = 74, checksum = 12777, ....................
+Receiver received correctly: seqnum = 75, acknum = -1, checksum = 35906, XXXXXXXXXXXXXXXXXXXX
+******模拟网络环境******：向上递交给应用层数据：XXXXXXXXXXXXXXXXXXXX
+Receiver sent confirmation message: seqnum = -1, acknum = 75, checksum = 12776, ....................
+Sender received confirmation: seqnum = -1, acknum = 74, checksum = 12777, ....................
+sliding window [ 75 76 * * ]
+Receiver received correctly: seqnum = 76, acknum = -1, checksum = 33335, YYYYYYYYYYYYYYYYYYYY
+******模拟网络环境******：向上递交给应用层数据：YYYYYYYYYYYYYYYYYYYY
+Receiver sent confirmation message: seqnum = -1, acknum = 76, checksum = 12775, ....................
+Sender received confirmation: seqnum = -1, acknum = 76, checksum = 12775, ....................
+sliding window [ * * * * ]
+Done. Close Timer.
+Sender sends message: seqnum = 77, acknum = -1, checksum = 30764, ZZZZZZZZZZZZZZZZZZZZ
+Sender Start Timer
+expectSequenceNumberSend is 78
+Sender sends message: seqnum = 78, acknum = -1, checksum = 29478, AAAAAAAAAAAAAAAAAAAA
+expectSequenceNumberSend is 79
+Sender sends message: seqnum = 79, acknum = -1, checksum = 26907, BBBBBBBBBBBBBBBBBBBB
+expectSequenceNumberSend is 80
+Sender sends message: seqnum = 80, acknum = -1, checksum = 24336, CCCCCCCCCCCCCCCCCCCC
+expectSequenceNumberSend is 81
+Receiver received correctly: seqnum = 77, acknum = -1, checksum = 30764, ZZZZZZZZZZZZZZZZZZZZ
+******模拟网络环境******：向上递交给应用层数据：ZZZZZZZZZZZZZZZZZZZZ
+Receiver sent confirmation message: seqnum = -1, acknum = 77, checksum = 12774, ....................
+Receiver received correctly: seqnum = 78, acknum = -1, checksum = 29478, AAAAAAAAAAAAAAAAAAAA
+******模拟网络环境******：向上递交给应用层数据：AAAAAAAAAAAAAAAAAAAA
+Receiver sent confirmation message: seqnum = -1, acknum = 78, checksum = 12773, ....................
+Sender received confirmation: seqnum = -1, acknum = 77, checksum = 12774, ....................
+sliding window [ 78 79 80 * ]
+Sender received confirmation: seqnum = -1, acknum = 78, checksum = 12773, ....................
+sliding window [ 79 80 * * ]
+Receiver received correctly: seqnum = 79, acknum = -1, checksum = 26907, BBBBBBBBBBBBBBBBBBBB
+******模拟网络环境******：向上递交给应用层数据：BBBBBBBBBBBBBBBBBBBB
+Receiver sent confirmation message: seqnum = -1, acknum = 79, checksum = 12772, ....................
+Receiver data verification error: seqnum = 80, acknum = -1, checksum = 24336, DCCCCCCCCCCCCCCCCCCC
+Receiver resending confirmation message: seqnum = -1, acknum = 79, checksum = 12772, ....................
+Sender received confirmation: seqnum = -1, acknum = 79, checksum = 12772, ....................
+sliding window [ 80 * * * ]
+wrong ACK, keep waiting
+timeout
+resending80.
+Sender's timer has expired, resend the message: seqnum = 80, acknum = -1, checksum = 24336, CCCCCCCCCCCCCCCCCCCC
+Receiver received correctly: seqnum = 80, acknum = -1, checksum = 24336, CCCCCCCCCCCCCCCCCCCC
+******模拟网络环境******：向上递交给应用层数据：CCCCCCCCCCCCCCCCCCCC
+Receiver sent confirmation message: seqnum = -1, acknum = 80, checksum = 12771, ....................
+Sender: ACK broken
+timeout
+resending80.
+Sender's timer has expired, resend the message: seqnum = 80, acknum = -1, checksum = 24336, CCCCCCCCCCCCCCCCCCCC
+Receiver received an incorrect message sequence number: seqnum = 80, acknum = -1, checksum = 24336, CCCCCCCCCCCCCCCCCCCC
+expecting81
+Receiver resending confirmation message: seqnum = -1, acknum = 80, checksum = 12771, ....................
+Sender received confirmation: seqnum = -1, acknum = 80, checksum = 12771, ....................
+sliding window [ * * * * ]
+Done. Close Timer.
+Sender sends message: seqnum = 81, acknum = -1, checksum = 21765, DDDDDDDDDDDDDDDDDDDD
+Sender Start Timer
+expectSequenceNumberSend is 82
+Sender sends message: seqnum = 82, acknum = -1, checksum = 19194, EEEEEEEEEEEEEEEEEEEE
+expectSequenceNumberSend is 83
+Sender sends message: seqnum = 83, acknum = -1, checksum = 16623, FFFFFFFFFFFFFFFFFFFF
+expectSequenceNumberSend is 84
+Sender sends message: seqnum = 84, acknum = -1, checksum = 14052, GGGGGGGGGGGGGGGGGGGG
+expectSequenceNumberSend is 85
+Receiver received correctly: seqnum = 81, acknum = -1, checksum = 21765, DDDDDDDDDDDDDDDDDDDD
+******模拟网络环境******：向上递交给应用层数据：DDDDDDDDDDDDDDDDDDDD
+Receiver sent confirmation message: seqnum = -1, acknum = 81, checksum = 12770, ....................
+Sender: ACK broken
+Receiver received correctly: seqnum = 82, acknum = -1, checksum = 19194, EEEEEEEEEEEEEEEEEEEE
+******模拟网络环境******：向上递交给应用层数据：EEEEEEEEEEEEEEEEEEEE
+Receiver sent confirmation message: seqnum = -1, acknum = 82, checksum = 12769, ....................
+Sender received confirmation: seqnum = -1, acknum = 82, checksum = 12769, ....................
+sliding window [ 83 84 * * ]
+Receiver received correctly: seqnum = 83, acknum = -1, checksum = 16623, FFFFFFFFFFFFFFFFFFFF
+******模拟网络环境******：向上递交给应用层数据：FFFFFFFFFFFFFFFFFFFF
+Receiver sent confirmation message: seqnum = -1, acknum = 83, checksum = 12768, ....................
+Sender received confirmation: seqnum = -1, acknum = 83, checksum = 12768, ....................
+sliding window [ 84 * * * ]
+Receiver received correctly: seqnum = 84, acknum = -1, checksum = 14052, GGGGGGGGGGGGGGGGGGGG
+******模拟网络环境******：向上递交给应用层数据：GGGGGGGGGGGGGGGGGGGG
+Receiver sent confirmation message: seqnum = -1, acknum = 84, checksum = 12767, ....................
+Sender received confirmation: seqnum = -1, acknum = 84, checksum = 12767, ....................
+sliding window [ * * * * ]
+Done. Close Timer.
+Sender sends message: seqnum = 85, acknum = -1, checksum = 11481, HHHHHHHHHHHHHHHHHHHH
+Sender Start Timer
+expectSequenceNumberSend is 86
+Sender sends message: seqnum = 86, acknum = -1, checksum = 8910, IIIIIIIIIIIIIIIIIIII
+expectSequenceNumberSend is 87
+Sender sends message: seqnum = 87, acknum = -1, checksum = 6339, JJJJJJJJJJJJJJJJJJJJ
+expectSequenceNumberSend is 88
+Sender sends message: seqnum = 88, acknum = -1, checksum = 3768, KKKKKKKKKKKKKKKKKKKK
+expectSequenceNumberSend is 89
+Receiver received correctly: seqnum = 85, acknum = -1, checksum = 11481, HHHHHHHHHHHHHHHHHHHH
+******模拟网络环境******：向上递交给应用层数据：HHHHHHHHHHHHHHHHHHHH
+Receiver sent confirmation message: seqnum = -1, acknum = 85, checksum = 12766, ....................
+Sender received confirmation: seqnum = -1, acknum = 85, checksum = 12766, ....................
+sliding window [ 86 87 88 * ]
+Receiver received correctly: seqnum = 86, acknum = -1, checksum = 8910, IIIIIIIIIIIIIIIIIIII
+******模拟网络环境******：向上递交给应用层数据：IIIIIIIIIIIIIIIIIIII
+Receiver sent confirmation message: seqnum = -1, acknum = 86, checksum = 12765, ....................
+Receiver received an incorrect message sequence number: seqnum = 88, acknum = -1, checksum = 3768, KKKKKKKKKKKKKKKKKKKK
+expecting87
+Receiver resending confirmation message: seqnum = -1, acknum = 86, checksum = 12765, ....................
+Sender received confirmation: seqnum = -1, acknum = 86, checksum = 12765, ....................
+sliding window [ 87 88 * * ]
+wrong ACK, keep waiting
+timeout
+resending87.
+Sender's timer has expired, resend the message: seqnum = 87, acknum = -1, checksum = 6339, JJJJJJJJJJJJJJJJJJJJ
+Receiver received correctly: seqnum = 87, acknum = -1, checksum = 6339, JJJJJJJJJJJJJJJJJJJJ
+******模拟网络环境******：向上递交给应用层数据：JJJJJJJJJJJJJJJJJJJJ
+Receiver sent confirmation message: seqnum = -1, acknum = 87, checksum = 12764, ....................
+Sender received confirmation: seqnum = -1, acknum = 87, checksum = 12764, ....................
+sliding window [ 88 * * * ]
+timeout
+resending88.
+Sender's timer has expired, resend the message: seqnum = 88, acknum = -1, checksum = 3768, KKKKKKKKKKKKKKKKKKKK
+Receiver received correctly: seqnum = 88, acknum = -1, checksum = 3768, KKKKKKKKKKKKKKKKKKKK
+******模拟网络环境******：向上递交给应用层数据：KKKKKKKKKKKKKKKKKKKK
+Receiver sent confirmation message: seqnum = -1, acknum = 88, checksum = 12763, ....................
+timeout
+resending88.
+Sender's timer has expired, resend the message: seqnum = 88, acknum = -1, checksum = 3768, KKKKKKKKKKKKKKKKKKKK
+Receiver received an incorrect message sequence number: seqnum = 88, acknum = -1, checksum = 3768, KKKKKKKKKKKKKKKKKKKK
+expecting89
+Receiver resending confirmation message: seqnum = -1, acknum = 88, checksum = 12763, ....................
+Sender received confirmation: seqnum = -1, acknum = 88, checksum = 12763, ....................
+sliding window [ * * * * ]
+Done. Close Timer.
+Sender sends message: seqnum = 89, acknum = -1, checksum = 1197, LLLLLLLLLLLLLLLLLLLL
+Sender Start Timer
+expectSequenceNumberSend is 90
+Sender sends message: seqnum = 90, acknum = -1, checksum = 64161, MMMMMMMMMMMMMMMMMMMM
+expectSequenceNumberSend is 91
+Sender sends message: seqnum = 91, acknum = -1, checksum = 61590, NNNNNNNNNNNNNNNNNNNN
+expectSequenceNumberSend is 92
+Sender sends message: seqnum = 92, acknum = -1, checksum = 59019, OOOOOOOOOOOOOOOOOOOO
+expectSequenceNumberSend is 93
+Receiver received an incorrect message sequence number: seqnum = 91, acknum = -1, checksum = 61590, NNNNNNNNNNNNNNNNNNNN
+expecting89
+Receiver resending confirmation message: seqnum = -1, acknum = 88, checksum = 12763, ....................
+Receiver received an incorrect message sequence number: seqnum = 92, acknum = -1, checksum = 59019, OOOOOOOOOOOOOOOOOOOO
+expecting89
+Receiver resending confirmation message: seqnum = -1, acknum = 88, checksum = 12763, ....................
+wrong ACK, keep waiting
+wrong ACK, keep waiting
+timeout
+resending89.
+Sender's timer has expired, resend the message: seqnum = 89, acknum = -1, checksum = 1197, LLLLLLLLLLLLLLLLLLLL
+Receiver received correctly: seqnum = 89, acknum = -1, checksum = 1197, LLLLLLLLLLLLLLLLLLLL
+******模拟网络环境******：向上递交给应用层数据：LLLLLLLLLLLLLLLLLLLL
+Receiver sent confirmation message: seqnum = -1, acknum = 89, checksum = 12762, ....................
+Sender received confirmation: seqnum = -1, acknum = 89, checksum = 12762, ....................
+sliding window [ 90 91 92 * ]
+timeout
+resending90.
+Sender's timer has expired, resend the message: seqnum = 90, acknum = -1, checksum = 64161, MMMMMMMMMMMMMMMMMMMM
+Receiver received correctly: seqnum = 90, acknum = -1, checksum = 64161, MMMMMMMMMMMMMMMMMMMM
+******模拟网络环境******：向上递交给应用层数据：MMMMMMMMMMMMMMMMMMMM
+Receiver sent confirmation message: seqnum = -1, acknum = 90, checksum = 12761, ....................
+Sender received confirmation: seqnum = -1, acknum = 90, checksum = 12761, ....................
+sliding window [ 91 92 * * ]
+timeout
+resending91.
+Sender's timer has expired, resend the message: seqnum = 91, acknum = -1, checksum = 61590, NNNNNNNNNNNNNNNNNNNN
+Receiver received correctly: seqnum = 91, acknum = -1, checksum = 61590, NNNNNNNNNNNNNNNNNNNN
+******模拟网络环境******：向上递交给应用层数据：NNNNNNNNNNNNNNNNNNNN
+Receiver sent confirmation message: seqnum = -1, acknum = 91, checksum = 12760, ....................
+Sender received confirmation: seqnum = -1, acknum = 91, checksum = 12760, ....................
+sliding window [ 92 * * * ]
+timeout
+resending92.
+Sender's timer has expired, resend the message: seqnum = 92, acknum = -1, checksum = 59019, OOOOOOOOOOOOOOOOOOOO
+timeout
+resending92.
+Sender's timer has expired, resend the message: seqnum = 92, acknum = -1, checksum = 59019, OOOOOOOOOOOOOOOOOOOO
+timeout
+resending92.
+Sender's timer has expired, resend the message: seqnum = 92, acknum = -1, checksum = 59019, OOOOOOOOOOOOOOOOOOOO
+Receiver received correctly: seqnum = 92, acknum = -1, checksum = 59019, OOOOOOOOOOOOOOOOOOOO
+******模拟网络环境******：向上递交给应用层数据：OOOOOOOOOOOOOOOOOOOO
+Receiver sent confirmation message: seqnum = -1, acknum = 92, checksum = 12759, ....................
+Sender received confirmation: seqnum = -1, acknum = 92, checksum = 12759, ....................
+sliding window [ * * * * ]
+Done. Close Timer.
+Sender sends message: seqnum = 93, acknum = -1, checksum = 56448, PPPPPPPPPPPPPPPPPPPP
+Sender Start Timer
+expectSequenceNumberSend is 94
+Sender sends message: seqnum = 94, acknum = -1, checksum = 53877, QQQQQQQQQQQQQQQQQQQQ
+expectSequenceNumberSend is 95
+Sender sends message: seqnum = 95, acknum = -1, checksum = 51306, RRRRRRRRRRRRRRRRRRRR
+expectSequenceNumberSend is 96
+Sender sends message: seqnum = 96, acknum = -1, checksum = 48735, SSSSSSSSSSSSSSSSSSSS
+expectSequenceNumberSend is 97
+Receiver data verification error: seqnum = -999999, acknum = -1, checksum = 56448, PPPPPPPPPPPPPPPPPPPP
+Receiver resending confirmation message: seqnum = -1, acknum = 92, checksum = 12759, ....................
+Receiver received an incorrect message sequence number: seqnum = 94, acknum = -1, checksum = 53877, QQQQQQQQQQQQQQQQQQQQ
+expecting93
+Receiver resending confirmation message: seqnum = -1, acknum = 92, checksum = 12759, ....................
+wrong ACK, keep waiting
+Receiver data verification error: seqnum = 95, acknum = -1, checksum = 51306, SRRRRRRRRRRRRRRRRRRR
+Receiver resending confirmation message: seqnum = -1, acknum = 92, checksum = 12759, ....................
+Receiver data verification error: seqnum = 96, acknum = -999999, checksum = 48735, SSSSSSSSSSSSSSSSSSSS
+Receiver resending confirmation message: seqnum = -1, acknum = 92, checksum = 12759, ....................
+Sender: ACK broken
+timeout
+resending93.
+Sender's timer has expired, resend the message: seqnum = 93, acknum = -1, checksum = 56448, PPPPPPPPPPPPPPPPPPPP
+Receiver received correctly: seqnum = 93, acknum = -1, checksum = 56448, PPPPPPPPPPPPPPPPPPPP
+******模拟网络环境******：向上递交给应用层数据：PPPPPPPPPPPPPPPPPPPP
+Receiver sent confirmation message: seqnum = -1, acknum = 93, checksum = 12758, ....................
+timeout
+resending93.
+Sender's timer has expired, resend the message: seqnum = 93, acknum = -1, checksum = 56448, PPPPPPPPPPPPPPPPPPPP
+Receiver received an incorrect message sequence number: seqnum = 93, acknum = -1, checksum = 56448, PPPPPPPPPPPPPPPPPPPP
+expecting94
+Receiver resending confirmation message: seqnum = -1, acknum = 93, checksum = 12758, ....................
+Sender received confirmation: seqnum = -1, acknum = 93, checksum = 12758, ....................
+sliding window [ 94 95 96 * ]
+timeout
+resending94.
+Sender's timer has expired, resend the message: seqnum = 94, acknum = -1, checksum = 53877, QQQQQQQQQQQQQQQQQQQQ
+timeout
+resending94.
+Sender's timer has expired, resend the message: seqnum = 94, acknum = -1, checksum = 53877, QQQQQQQQQQQQQQQQQQQQ
+timeout
+resending94.
+Sender's timer has expired, resend the message: seqnum = 94, acknum = -1, checksum = 53877, QQQQQQQQQQQQQQQQQQQQ
+Receiver received correctly: seqnum = 94, acknum = -1, checksum = 53877, QQQQQQQQQQQQQQQQQQQQ
+******模拟网络环境******：向上递交给应用层数据：QQQQQQQQQQQQQQQQQQQQ
+Receiver sent confirmation message: seqnum = -1, acknum = 94, checksum = 12757, ....................
+Sender received confirmation: seqnum = -1, acknum = 94, checksum = 12757, ....................
+sliding window [ 95 96 * * ]
+timeout
+resending95.
+Sender's timer has expired, resend the message: seqnum = 95, acknum = -1, checksum = 51306, RRRRRRRRRRRRRRRRRRRR
+Receiver received correctly: seqnum = 95, acknum = -1, checksum = 51306, RRRRRRRRRRRRRRRRRRRR
+******模拟网络环境******：向上递交给应用层数据：RRRRRRRRRRRRRRRRRRRR
+Receiver sent confirmation message: seqnum = -1, acknum = 95, checksum = 12756, ....................
+Sender received confirmation: seqnum = -1, acknum = 95, checksum = 12756, ....................
+sliding window [ 96 * * * ]
+timeout
+resending96.
+Sender's timer has expired, resend the message: seqnum = 96, acknum = -1, checksum = 48735, SSSSSSSSSSSSSSSSSSSS
+timeout
+resending96.
+Sender's timer has expired, resend the message: seqnum = 96, acknum = -1, checksum = 48735, SSSSSSSSSSSSSSSSSSSS
+Receiver received correctly: seqnum = 96, acknum = -1, checksum = 48735, SSSSSSSSSSSSSSSSSSSS
+******模拟网络环境******：向上递交给应用层数据：SSSSSSSSSSSSSSSSSSSS
+Receiver sent confirmation message: seqnum = -1, acknum = 96, checksum = 12755, ....................
+Sender received confirmation: seqnum = -1, acknum = 96, checksum = 12755, ....................
+sliding window [ * * * * ]
+Done. Close Timer.
+Sender sends message: seqnum = 97, acknum = -1, checksum = 46164, TTTTTTTTTTTTTTTTTTTT
+Sender Start Timer
+expectSequenceNumberSend is 98
+Sender sends message: seqnum = 98, acknum = -1, checksum = 43593, UUUUUUUUUUUUUUUUUUUU
+expectSequenceNumberSend is 99
+Sender sends message: seqnum = 99, acknum = -1, checksum = 41022, VVVVVVVVVVVVVVVVVVVV
+expectSequenceNumberSend is 100
+Sender sends message: seqnum = 100, acknum = -1, checksum = 38451, WWWWWWWWWWWWWWWWWWWW
+expectSequenceNumberSend is 101
+Receiver received correctly: seqnum = 97, acknum = -1, checksum = 46164, TTTTTTTTTTTTTTTTTTTT
+******模拟网络环境******：向上递交给应用层数据：TTTTTTTTTTTTTTTTTTTT
+Receiver sent confirmation message: seqnum = -1, acknum = 97, checksum = 12754, ....................
+Receiver received correctly: seqnum = 98, acknum = -1, checksum = 43593, UUUUUUUUUUUUUUUUUUUU
+******模拟网络环境******：向上递交给应用层数据：UUUUUUUUUUUUUUUUUUUU
+Receiver sent confirmation message: seqnum = -1, acknum = 98, checksum = 12753, ....................
+Sender received confirmation: seqnum = -1, acknum = 97, checksum = 12754, ....................
+sliding window [ 98 99 100 * ]
+Sender received confirmation: seqnum = -1, acknum = 98, checksum = 12753, ....................
+sliding window [ 99 100 * * ]
+Receiver received correctly: seqnum = 99, acknum = -1, checksum = 41022, VVVVVVVVVVVVVVVVVVVV
+******模拟网络环境******：向上递交给应用层数据：VVVVVVVVVVVVVVVVVVVV
+Receiver sent confirmation message: seqnum = -1, acknum = 99, checksum = 12752, ....................
+Receiver received correctly: seqnum = 100, acknum = -1, checksum = 38451, WWWWWWWWWWWWWWWWWWWW
+******模拟网络环境******：向上递交给应用层数据：WWWWWWWWWWWWWWWWWWWW
+Receiver sent confirmation message: seqnum = -1, acknum = 100, checksum = 12751, ....................
+Sender received confirmation: seqnum = -1, acknum = 99, checksum = 12752, ....................
+sliding window [ 100 * * * ]
+Sender received confirmation: seqnum = -1, acknum = 100, checksum = 12751, ....................
+sliding window [ * * * * ]
+Done. Close Timer.
+Sender sends message: seqnum = 101, acknum = -1, checksum = 35880, XXXXXXXXXXXXXXXXXXXX
+Sender Start Timer
+expectSequenceNumberSend is 102
+Sender sends message: seqnum = 102, acknum = -1, checksum = 33309, YYYYYYYYYYYYYYYYYYYY
+expectSequenceNumberSend is 103
+Sender sends message: seqnum = 103, acknum = -1, checksum = 30738, ZZZZZZZZZZZZZZZZZZZZ
+expectSequenceNumberSend is 104
+Sender sends message: seqnum = 104, acknum = -1, checksum = 29769, EOF                 
+expectSequenceNumberSend is 105
+Receiver received an incorrect message sequence number: seqnum = 102, acknum = -1, checksum = 33309, YYYYYYYYYYYYYYYYYYYY
+expecting101
+Receiver resending confirmation message: seqnum = -1, acknum = 100, checksum = 12751, ....................
+Receiver data verification error: seqnum = -999999, acknum = -1, checksum = 30738, ZZZZZZZZZZZZZZZZZZZZ
+Receiver resending confirmation message: seqnum = -1, acknum = 100, checksum = 12751, ....................
+wrong ACK, keep waiting
+Receiver received an incorrect message sequence number: seqnum = 104, acknum = -1, checksum = 29769, EOF                 
+expecting101
+Receiver resending confirmation message: seqnum = -1, acknum = 100, checksum = 12751, ....................
+wrong ACK, keep waiting
+wrong ACK, keep waiting
+timeout
+resending101.
+Sender's timer has expired, resend the message: seqnum = 101, acknum = -1, checksum = 35880, XXXXXXXXXXXXXXXXXXXX
+Receiver received correctly: seqnum = 101, acknum = -1, checksum = 35880, XXXXXXXXXXXXXXXXXXXX
+******模拟网络环境******：向上递交给应用层数据：XXXXXXXXXXXXXXXXXXXX
+Receiver sent confirmation message: seqnum = -1, acknum = 101, checksum = 12750, ....................
+Sender received confirmation: seqnum = -1, acknum = 101, checksum = 12750, ....................
+sliding window [ 102 103 104 * ]
+timeout
+resending102.
+Sender's timer has expired, resend the message: seqnum = 102, acknum = -1, checksum = 33309, YYYYYYYYYYYYYYYYYYYY
+Receiver received correctly: seqnum = 102, acknum = -1, checksum = 33309, YYYYYYYYYYYYYYYYYYYY
+******模拟网络环境******：向上递交给应用层数据：YYYYYYYYYYYYYYYYYYYY
+Receiver sent confirmation message: seqnum = -1, acknum = 102, checksum = 12749, ....................
+Sender received confirmation: seqnum = -1, acknum = 102, checksum = 12749, ....................
+sliding window [ 103 104 * * ]
+timeout
+resending103.
+Sender's timer has expired, resend the message: seqnum = 103, acknum = -1, checksum = 30738, ZZZZZZZZZZZZZZZZZZZZ
+timeout
+resending103.
+Sender's timer has expired, resend the message: seqnum = 103, acknum = -1, checksum = 30738, ZZZZZZZZZZZZZZZZZZZZ
+Receiver received correctly: seqnum = 103, acknum = -1, checksum = 30738, ZZZZZZZZZZZZZZZZZZZZ
+******模拟网络环境******：向上递交给应用层数据：ZZZZZZZZZZZZZZZZZZZZ
+Receiver sent confirmation message: seqnum = -1, acknum = 103, checksum = 12748, ....................
+timeout
+resending103.
+Sender's timer has expired, resend the message: seqnum = 103, acknum = -1, checksum = 30738, ZZZZZZZZZZZZZZZZZZZZ
+Receiver received an incorrect message sequence number: seqnum = 103, acknum = -1, checksum = 30738, ZZZZZZZZZZZZZZZZZZZZ
+expecting104
+Receiver resending confirmation message: seqnum = -1, acknum = 103, checksum = 12748, ....................
+Sender received confirmation: seqnum = -1, acknum = 103, checksum = 12748, ....................
+sliding window [ 104 * * * ]
+timeout
+resending104.
+Sender's timer has expired, resend the message: seqnum = 104, acknum = -1, checksum = 29769, EOF                 
+Receiver received correctly: seqnum = 104, acknum = -1, checksum = 29769, EOF                 
+******模拟网络环境******：向上递交给应用层数据：EOF                  
+Receiver sent confirmation message: seqnum = -1, acknum = 104, checksum = 12747, ....................
+Sender: ACK broken
+timeout
+resending104.
+Sender's timer has expired, resend the message: seqnum = 104, acknum = -1, checksum = 29769, EOF                 
+Receiver received an incorrect message sequence number: seqnum = 104, acknum = -1, checksum = 29769, EOF                 
+expecting105
+Receiver resending confirmation message: seqnum = -1, acknum = 104, checksum = 12747, ....................
+Sender received confirmation: seqnum = -1, acknum = 104, checksum = 12747, ....................
+sliding window [ * * * * ]
+Done. Close Timer.
+******模拟网络环境******：模拟网络环境已发送完应用层数据，关闭模拟网络环境
+已发送应用层Message个数: 105
+发送到网络层数据Packet个数: 184
+网络层丢失的数据Packet个数: 29
+网络层损坏的数据pakcet个数:19
+发送到网络层确认Packet个数:155
+网络层丢失的确认Packet个数: 18
+网络层损坏的确认Packet个数: 14
+
